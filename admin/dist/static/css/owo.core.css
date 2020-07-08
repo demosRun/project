@@ -67,31 +67,88 @@ li {
                 url('../font/FZLTCHJW.svg#MicrosoftYaHei') format('svg');
             }
           
+
+.admin {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(#f9f7f7 80%, #bcbcd0);
+}
+
 .menu-box {
-  width: 300px;
-  background-color: #383a6d;
+  width: 260px;
+  background: white;
   height: 100%;
+  background: linear-gradient(#fff8f8 40%, rgba(241, 236, 236, 0.23));
+  box-shadow: 0px 0px 3px #d9efef;
 }
 
 .menu-box .title {
-  color: white;
+  color: #333;
   line-height: 100px;
-  font-size: 26px;
-  text-align: center;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 15px;
 }
 
 .menu-title {
-  color: #a7b1c2;
-  padding-left: 20px;
+  color: #333;
+  padding-left: 5px;
   display: flex;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 45px;
+  font-weight: bold;
 }
 
 .menu-title .icon {
-  font-size: 30px;
+  font-size: 25px;
   display: inline-block;
-  width: 50px;
+  width: 45px;
   text-align: center;
+  line-height: 41px;
+  color: #b372ef;
+}
+
+.menu-item {
+  background-image: url('../resource/doit.png');
+  color: #333;
+  padding-left: 60px;
+  line-height: 33px;
+  font-size: 17px;
+  background-repeat: no-repeat;
+  background-position: 25px 3px;
+  background-size: 30px;
+  display: block;
+}
+
+.right {
+  height: 100%;
+  overflow: auto;
+  width: calc(100% - 260px);
+}
+
+.right .title-bar {
+  height: 40px;
+  border-bottom: 1px solid #eae5e5;
+}
+
+.right .log {
+  line-height: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.right .log span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.box {
+  margin: 5px;
+  background-color: white;
+  height: calc(100% - 71px);
+  overflow: auto;
+  border-radius: 3px;
+  padding: 10px;
 }
 
