@@ -67,7 +67,9 @@ li {
                 url('../font/FZLTCHJW.svg#MicrosoftYaHei') format('svg');
             }
           
-
+.box table {
+  width: 100%;
+}
 .admin {
   background-size: 100% 100%;
   background-position: center;

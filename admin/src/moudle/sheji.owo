@@ -361,5 +361,7 @@
 
 
 <style lang="less">
-
+table {
+  width: 100%;
+}
 </style>
