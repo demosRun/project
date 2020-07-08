@@ -1,0 +1,133 @@
+<template lang="pug">
+.login
+  .login-box
+    .left
+      img(src="@|icon.svg|")
+    .right
+      .box
+        .title(font="FZLTCHJW.TTF")
+          h2 全媒体项目管理系统
+        .form
+          p
+            img.icon(src="@|user.png|") 
+            input#username(type='text', placeholder='用户名')
+          p
+            img.icon(src="@|password.png|") 
+            input#password(type='password', placeholder='密码')
+          input.button(type='button' value='登录' font="FZLTCHJW.TTF")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.login {
+  background-image: url('@|bg.jpg|');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eee5e6;
+}
+.login-box {
+  background-color: white;
+  border-radius: 15px;
+  width: 800px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 400px;
+  box-shadow: 1px 1px 7px #89abc3;
+  opacity: 1;
+  display: flex;
+  .left {
+    width: 380px;
+    position: relative;
+    img {
+      width: 360px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 80px;
+      margin: auto;
+    }
+  }
+  .right {
+    width: 360px;
+    padding: 30px;
+    .title {
+      h2 {
+        color: #4da9d7;
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: normal;
+        line-height: 60px;
+      }
+    }
+  }
+}
+.form {
+  height: 280px;
+  position: relative;
+  input {
+    border: none;
+    height: 45px;
+    line-height: 45px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 60px;
+    font-size: 20px;
+    border-bottom: 2px solid #eeeeee;
+    margin-bottom: 30px;
+    background-size: 26px;
+    box-sizing: border-box;
+  }
+  input:focus {
+    outline: none;
+    border-color: darkkhaki;
+  }
+  .button {
+    background-color: #1ea6c6;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 45px;
+    border-bottom: none;
+    background-image: linear-gradient(#1ea6c6, #3b69ab);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    box-shadow: 0px 1px 3px #716f86;
+    transition-duration: 0.3s;
+    transition-property: transform, -webkit-transform, -o-transform;
+  }
+  .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+}
+.form {
+  p {
+    position: relative;
+  }
+}
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+</style>

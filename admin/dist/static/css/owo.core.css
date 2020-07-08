@@ -1,0 +1,97 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+            [font="FZLTCHJW"] {
+              font-family: 'FZLTCHJW';
+            }
+            @font-face {
+              font-family: 'FZLTCHJW';
+              src: url('../font/FZLTCHJW.eot');
+              src: url('../font/FZLTCHJW.eot?#iefix') format('embedded-opentype'),
+                url('../font/FZLTCHJW.woff') format('woff'),
+                url('../font/FZLTCHJW.ttf')  format('truetype'),
+                url('../font/FZLTCHJW.svg#MicrosoftYaHei') format('svg');
+            }
+          
+.menu-box {
+  width: 300px;
+  background-color: #383a6d;
+  height: 100%;
+}
+
+.menu-box .title {
+  color: white;
+  line-height: 100px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.menu-title {
+  color: #a7b1c2;
+  padding-left: 20px;
+  display: flex;
+  font-size: 22px;
+  line-height: 45px;
+}
+
+.menu-title .icon {
+  font-size: 30px;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+

@@ -1,0 +1,181 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+            [font="FZLTCHJW"] {
+              font-family: 'FZLTCHJW';
+            }
+            @font-face {
+              font-family: 'FZLTCHJW';
+              src: url('../font/FZLTCHJW.eot');
+              src: url('../font/FZLTCHJW.eot?#iefix') format('embedded-opentype'),
+                url('../font/FZLTCHJW.woff') format('woff'),
+                url('../font/FZLTCHJW.ttf')  format('truetype'),
+                url('../font/FZLTCHJW.svg#MicrosoftYaHei') format('svg');
+            }
+          
+.login {
+  background-image: url('../resource/bg.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eee5e6;
+}
+
+.login-box {
+  background-color: white;
+  border-radius: 15px;
+  width: 800px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 400px;
+  box-shadow: 1px 1px 7px #89abc3;
+  opacity: 1;
+  display: flex;
+}
+
+.login-box .left {
+  width: 380px;
+  position: relative;
+}
+
+.login-box .left img {
+  width: 360px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  margin: auto;
+}
+
+.login-box .right {
+  width: 360px;
+  padding: 30px;
+}
+
+.login-box .right .title h2 {
+  color: #4da9d7;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.form {
+  height: 280px;
+  position: relative;
+}
+
+.form input {
+  border: none;
+  height: 45px;
+  line-height: 45px;
+  width: 360px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+  font-size: 20px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 30px;
+  background-size: 26px;
+  box-sizing: border-box;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: darkkhaki;
+}
+
+.form .button {
+  background-color: #1ea6c6;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  bottom: 45px;
+  border-bottom: none;
+  background-image: linear-gradient(#1ea6c6, #3b69ab);
+  background-size: 100% 100%;
+  background-position: 0 0;
+  box-shadow: 0px 1px 3px #716f86;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.form .button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.form p {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
