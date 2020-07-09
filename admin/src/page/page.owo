@@ -5,9 +5,12 @@
     .menu
       .menu-title
         .icon &#xe60d;
-        span 自主创新
-      a.menu-item(href="#") 项目管理
-      a.menu-item(href="#") 创建项目
+        span 竞单管理
+      a.menu-item(href="#") 等待竞单
+      a.menu-item(href="#") 等待确认
+      a.menu-item(href="#") 正在进行
+      a.menu-item(href="#") 已完成竞单
+      a.menu-item(href="#") 竞单失败
 
       //- 经营部门
       .menu-title
@@ -40,7 +43,13 @@
         span#username 全媒体制作二部 蒲鸽
         span#logout 登出
     //- 内容显示区域
-    plug(_name="sheji" _src="./src/moudle/sheji.owo")    
+
+    //- 设计刊例价
+    //- plug(_name="sheji" _src="./src/moudle/sheji.owo")
+    //- 视频刊例价
+    //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
+    //- 竞单列表
+    plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
 </template>
 
 <script>
@@ -106,12 +115,12 @@
   overflow: auto;
   width: calc(100% - 260px);
   .title-bar {
-    height: 40px;
+    height: 30px;
     border-bottom: 1px solid #eae5e5;
   }
   .log {
-    line-height: 40px;
-    font-size: 18px;
+    line-height: 30px;
+    font-size: 14px;
     color: #666;
     span {
       margin-right: 20px;

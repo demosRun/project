@@ -1,0 +1,123 @@
+<template lang="pug">
+.box
+  table(border="0" rules="none")
+    tbody
+      tr
+        th 序号
+        th 需求名称
+        th 开始时间
+        th 需求类别
+        th 状态
+        th 操作
+      tr
+        td 226
+        td
+          a(href='order.php?id=226') 2020夏汛早报
+        td 2020-07-09
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=226') 竞单
+      tr
+        td 225
+        td
+          a(href='order.php?id=225') 2020京津冀联防日报
+        td 2020-07-09
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=225') 竞单
+      tr
+        td 224
+        td
+          a(href='order.php?id=224') 中科院院士访谈
+        td 2020-07-09
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=224') 竞单
+      tr
+        td 218
+        td
+          a(href='order.php?id=218') 抓党建促脱贫攻坚图解
+        td 2020-07-08
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=218') 竞单
+      tr
+        td 210
+        td
+          a(href='order.php?id=210') 摄影服务
+        td 2020-07-08
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=210') 竞单
+      tr
+        td 206
+        td
+          a(href='order.php?id=206') 不忘初心为党颂歌海报
+        td 2020-07-08
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=206') 竞单
+      tr
+        td 205
+        td
+          a(href='order.php?id=205') 四川频道申请制作“微创业扶植计划”专题
+        td 2020-07-07
+        td 临时
+        td 等待接单
+        td
+          a(href='bid.php?id=205') 竞单
+      tr
+        td 201
+        td
+          a(href='order.php?id=201') 方江山副总编辑参观
+        td 2020-07-07
+        td 临时
+        td 等待接单
+        td
+          a(href='bid.php?id=201') 竞单
+      tr
+        td 199
+        td
+          a(href='order.php?id=199') PPT制作
+        td 2020-07-07
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=199') 竞单
+      tr
+        td 195
+        td
+          a(href='order.php?id=195') 应急管理部系列访谈录播
+        td 2020-07-06
+        td 日常
+        td 等待接单
+        td
+          a(href='bid.php?id=195') 竞单
+  plug(_name="pageBar" _src="./src/moudle/pageBar.owo")
+</template>
+
+
+<style lang="less">
+tr:nth-child(2n) {
+  background-color: #eef9fd;
+}
+tr:hover {
+  background-color: #d9effd;
+}
+a {
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  color: #4430ad;
+  cursor: pointer;
+}
+a:hover {
+  color: #F44336;
+}
+</style>

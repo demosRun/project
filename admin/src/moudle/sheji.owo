@@ -1,15 +1,15 @@
 <template lang="pug">
 .box
-  table
+  table(border="0" rules="none")
     tbody
       tr
         th 序号
         th(style="width:120px") 支持项目
         th(colspan="2") 说明
         th 分值
-        th(style="width:200px") 备注
+        th(style="width:600px") 备注
       tr
-        td(colspan="6" style="background-color:rgba(138,106,19,0.4)") 前端
+        td(colspan="6" style="background-color:#e2eff8") 前端
       tr
         td(rowspan="11") 1
         td(rowspan="11")  页面+模板+测试
@@ -103,7 +103,7 @@
         td  3-5分
         td 复杂，包括增加版块、增加效果等
       tr
-        td(colspan="6" style="background-color:rgba(138,106,19,0.4)") 设计
+        td(colspan="6" style="background-color:#e2eff8") 设计
       tr
         td(rowspan="12") 5
         td(rowspan="12") 专题、官网（设计）
@@ -308,7 +308,7 @@
         td 10分
         td
       tr
-        td(colspan="6" style="background-color:rgba(138,106,19,0.4)") 移动端界面设计
+        td(colspan="6" style="background-color:#e2eff8") 移动端界面设计
       tr
         td 19
         td 界面设计
@@ -322,7 +322,7 @@
         td 面议
         td
       tr
-        td(colspan="6" style="background-color:rgba(138,106,19,0.4)") 其他设计支持
+        td(colspan="6" style="background-color:#e2eff8") 其他设计支持
       tr
         td 21
         td 设计师
@@ -350,7 +350,7 @@
         td(colspan="2")
         td 5分/天
       tr
-        td(colspan="6" style="background-color:rgba(138,106,19,0.4)") 重大项目设计支持
+        td(colspan="6" style="background-color:#e2eff8") 重大项目设计支持
       tr
         td 26
         td 人民网重大项目
@@ -361,7 +361,5 @@
 
 
 <style lang="less">
-table {
-  width: 100%;
-}
+
 </style>

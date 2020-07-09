@@ -1,0 +1,85 @@
+<template lang="pug">
+.page-bar-box.clear
+  .page-bar.clear.fr
+    .item
+      a(href="#") 首页
+    .item
+      a(href="#") 上一页
+    
+    .item.page-show
+      input.number-input(type="number" value="1")
+      span.deparator /
+      span 5
+    input.item.go-button(type="button" value="跳转" title="跳转至输入的页数")
+    .item
+      a(href="#") 下一页
+</template>
+
+
+<style lang="less">
+.page-bar {
+  margin-top: 20px;
+}
+.item {
+  float: left;
+  margin: 0 5px;
+  a {
+    border: 1px solid #7c6f84;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #7c6f84;
+  }
+}
+.item:hover a {
+  background-color: #009fe9;
+  color: white;
+  border-color: #009fe9;
+  text-decoration: none;
+}
+.number-input {
+  width: 35px;
+  text-align: center;
+  line-height: 24px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #7c6f84;
+  border-radius: 3px;
+  color: #333;
+}
+.to-bar {
+  margin-left: 15px;
+}
+.page-show {
+  font-size: 16px;
+  color: #999;
+  display: flex;
+  line-height: 31px;
+  height: 24px;
+  justify-content: center;
+  .deparator {
+    margin: 0 5px;
+  }
+}
+.go-button {
+  border: 1px solid #7c6f84;
+  color: white;
+  background-color: transparent;
+  line-height: 23px;
+  height: 24px;
+  width: 45px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 0;
+  color: #7c6f84;
+  padding: 0 5px;
+}
+.go-button:hover {
+  color: white;
+  background-color: #009fe9;
+  border-color: #009fe9;
+}
+</style>
