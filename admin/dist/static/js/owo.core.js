@@ -1,4 +1,4 @@
-// Thu Jul 09 2020 21:30:08 GMT+0800 (GMT+08:00)
+// Fri Jul 10 2020 16:19:15 GMT+0800 (GMT+08:00)
 var owo = {tool: {},state: {},};
 /* 方法合集 */
 var _owo = {
@@ -15,6 +15,11 @@ var _owo = {
 
 /* 运行页面初始化方法 */
 _owo.runCreated = function (pageFunction) {
+  // 如果dom已经被删掉那么不会运行对应的方法
+  if (!pageFunction.$el) {
+    console.info('dom元素不存在!')
+    return;
+  }
   try {
     // console.log(pageFunction)
     if (pageFunction.show) {pageFunction.show.apply(pageFunction)}
@@ -286,13 +291,16 @@ function Page(pageScript, parentScript) {
 }
 
 function owoPageInit () {
-  // console.log(entryDom)
-  // console.log(this)
   _owo.runCreated(this)
-  for (var key in this.template) {
-    var templateScript = this.template[key]
-    _owo.runCreated(templateScript)
+  // 递归处理
+  function recursion (entry) {
+    for (var key in entry.template) {
+      var templateScript = entry.template[key]
+      _owo.runCreated(templateScript)
+      recursion(templateScript)
+    }
   }
+  recursion(this)
   
   
 }

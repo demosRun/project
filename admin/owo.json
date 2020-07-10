@@ -53,6 +53,14 @@
 			"name": "main",
 			"src": "./src/main.js",
 			"resource": true
+		},
+		{
+			"name": "jquery-1.7.1.min",
+			"src": "./src/resource/jquery-1.7.1.min.js"
+		},
+		{
+			"name": "jquery.datetimepicker",
+			"src": "./src/resource/jquery.datetimepicker.js"
 		}
 	],
 	"styleList": [
@@ -60,6 +68,10 @@
 			"name": "main",
 			"src": "./src/main.css",
 			"resource": true
+		},
+		{
+			"name": "datetimepicker",
+			"src": "./src/resource/datetimepicker.css"
 		}
 	],
 	"pageList": [

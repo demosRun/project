@@ -67,104 +67,43 @@ li {
                 url('../font/FZLTCHJW.svg#MicrosoftYaHei') format('svg');
             }
           
-.page-bar-box .page-bar {
-  margin-top: 20px;
+.add-new {
+  height: calc(100% - 51px);
+  padding: 10px;
 }
 
-.page-bar-box .item {
+.add-new .add-new-card {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.add-new .input-bar {
   float: left;
-  margin: 0 5px;
-}
-
-.page-bar-box .item a {
-  border: 1px solid #7c6f84;
-  padding: 2px 6px;
-  border-radius: 2px;
-  font-size: 13px;
-  color: #7c6f84;
-}
-
-.page-bar-box .item:hover a {
-  background-color: #009fe9;
-  color: white;
-  border-color: #009fe9;
-  text-decoration: none;
-}
-
-.page-bar-box .number-input {
-  width: 35px;
-  text-align: center;
-  line-height: 24px;
-  outline: none;
-  font-size: 16px;
-  border: 1px solid #7c6f84;
-  border-radius: 3px;
-  color: #333;
-}
-
-.page-bar-box .to-bar {
-  margin-left: 15px;
-}
-
-.page-bar-box .page-show {
-  font-size: 16px;
-  color: #999;
   display: flex;
-  line-height: 31px;
-  height: 24px;
-  justify-content: center;
+  line-height: 30px;
+  width: 300px;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 15px;
 }
 
-.page-bar-box .page-show .deparator {
-  margin: 0 5px;
-}
-
-.page-bar-box .go-button {
-  border: 1px solid #7c6f84;
-  color: white;
-  background-color: transparent;
-  line-height: 23px;
-  height: 24px;
-  width: 45px;
-  text-align: center;
-  border-radius: 2px;
-  font-size: 13px;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-right: 0;
-  color: #7c6f84;
-  padding: 0 5px;
-}
-
-.page-bar-box .go-button:hover {
-  color: white;
-  background-color: #009fe9;
-  border-color: #009fe9;
-}
-.box tr:nth-child(2n) {
-  background-color: #eef9fd;
-}
-
-.box tr:hover {
-  background-color: #d9effd;
-}
-
-.box a {
-  display: block;
-  background-color: transparent;
-  text-decoration: none;
-  color: #4430ad;
-  cursor: pointer;
-}
-
-.box a:hover {
-  color: #F44336;
+.add-new .title {
+  font-size: 20px;
+  margin: 0 10px;
+  line-height: 40px;
+  border-bottom: 1px solid #ddedec;
+  margin-bottom: 20px;
 }
 .admin {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background: linear-gradient(#f9f7f7 80%, #bcbcd0);
+}
+
+.menu {
+  height: calc(100% - 120px);
+  overflow: auto;
 }
 
 .menu-box {
@@ -238,7 +177,7 @@ li {
 .box {
   margin: 5px;
   background-color: white;
-  height: calc(100% - 71px);
+  height: calc(100% - 61px);
   overflow: auto;
   border-radius: 3px;
   padding: 10px;

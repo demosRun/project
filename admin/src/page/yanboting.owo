@@ -1,0 +1,45 @@
+<template lang="pug">
+.add-new
+  .add-new-card.clear
+    .title(font="FZLTCHJW.TTF") 申请人信息
+    .input-bar
+      span 申请人
+      input(type="text")
+    .input-bar
+      span 申请部门
+      input(type="text")
+    .input-bar
+      span 联系方式
+      input(type="text")
+    .input-bar
+      span 申请时间
+      input(type="text")
+</template>
+
+
+<style lang="less">
+.add-new {
+  height: calc(100% - 51px);
+  padding: 10px;
+}
+.add-new-card {
+  background-color: white;
+  border-radius: 5px;
+}
+.input-bar {
+  float: left;
+  display: flex;
+  line-height: 30px;
+  width: 300px;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-bottom: 15px;
+}
+.title {
+  font-size: 20px;
+  margin: 0 10px;
+  line-height: 40px;
+  border-bottom: 1px solid #ddedec;
+  margin-bottom: 20px;
+}
+</style>

@@ -12,12 +12,17 @@
       a.menu-item(href="#") 已完成竞单
       a.menu-item(href="#") 竞单失败
 
+      .menu-title
+        .icon &#xe611;
+        span 创建需求
+      a.menu-item(href="#") 制作需求
+      a.menu-item(href="#") 访谈需求
+      a.menu-item(href="#") 演播厅活动
+      a.menu-item(href="#") 自主创新
       //- 经营部门
       .menu-title
         .icon &#xe611;
         span 需求管理
-      a.menu-item(href="#") 创建需求
-      a.menu-item(href="#") 自主创新
       a.menu-item(href="#") 待审核需求
       a.menu-item(href="#") 历史需求
       .menu-title
@@ -49,7 +54,9 @@
     //- 视频刊例价
     //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
     //- 竞单列表
-    plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+    //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+    //- 演播厅需求
+    plug(_name="yanboting" _src="./src/page/yanboting.owo")
 </template>
 
 <script>
@@ -68,6 +75,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background: linear-gradient(#f9f7f7 80%, #bcbcd0);
+}
+.menu {
+  height: calc(100% - 120px);
+  overflow: auto;
 }
 .menu-box {
   width: 260px;
@@ -131,7 +142,7 @@
 .box {
   margin: 5px;
   background-color: white;
-  height: calc(100% - 71px);
+  height: calc(100% - 61px);
   overflow: auto;
   border-radius: 3px;
   padding: 10px;

@@ -1,5 +1,6 @@
 <template lang="pug">
 .box
+  plug(_name="searchBar" _src="./src/moudle/searchBar.owo")
   table(border="0" rules="none")
     tbody
       tr
@@ -102,6 +103,12 @@
   plug(_name="pageBar" _src="./src/moudle/pageBar.owo")
 </template>
 
+<script>
+  module.exports = {
+    created: function () {
+    }
+  }
+</script>
 
 <style lang="less">
 tr:nth-child(2n) {
