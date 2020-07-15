@@ -56,7 +56,9 @@
     //- 竞单列表
     //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
     //- 演播厅需求
-    plug(_name="yanboting" _src="./src/page/yanboting.owo")
+    //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
+    //- 评价
+    plug(_name="pingjia" _src="./src/page/pingjia.owo")
 </template>
 
 <script>

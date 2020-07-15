@@ -1,0 +1,84 @@
+<template lang="pug">
+.pingjia
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 项目评价
+    .pingjia-bar.clear
+      .left 完成时效：
+      .right.clear
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+    .pingjia-bar.clear
+      .left 作品质量：
+      .right.clear
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+    .pingjia-bar.clear
+      .left 技术创新：
+      .right.clear
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+        .icon &#xe632;
+    .input-bar.clear
+      .left 浏览地址：
+      .right.clear
+        input(type="text" placeholder="完整地址(匿名)")
+    .text 留言评价
+    textarea(id="description" placeholder="详细需求描述")
+</template>
+
+
+<style lang="less">
+.pingjia {
+  height: calc(100% - 51px);
+  padding: 10px;
+  overflow: auto;
+}
+.pingjia-bar {
+  line-height: 40px;
+  font-size: 18px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    float: left;
+  }
+  .right {
+    float: left;
+    .icon {
+      float: left;
+      width: 40px;
+      text-align: center;
+      color: #ccc;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
+.input-bar {
+  line-height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  input {
+    border: 2px solid #e0e0e0;
+    border-radius: 3px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 500px;
+    outline: none;
+  }
+}
+.text {
+  line-height: 40px;
+  font-size: 18px;
+}
+</style>
