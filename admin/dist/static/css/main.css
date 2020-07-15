@@ -86,12 +86,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 @font-face {
   font-family: 'iconfont';  /* project id 1929754 */
-  src: url('//at.alicdn.com/t/font_1929754_tylypb726o.eot');
-  src: url('//at.alicdn.com/t/font_1929754_tylypb726o.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1929754_tylypb726o.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1929754_tylypb726o.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1929754_tylypb726o.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1929754_tylypb726o.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1929754_r9y3l4nkrbg.eot');
+  src: url('//at.alicdn.com/t/font_1929754_r9y3l4nkrbg.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1929754_r9y3l4nkrbg.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1929754_r9y3l4nkrbg.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1929754_r9y3l4nkrbg.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1929754_r9y3l4nkrbg.svg#iconfont') format('svg');
 }
 
 .icon {
@@ -155,4 +155,55 @@ input::-webkit-inner-spin-button {
 }
 input[type="number"]{
     -moz-appearance: textfield;
+}
+
+.checkbox-item {
+  position: relative;
+  margin: .5rem;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 250px;
+  color: #444;
+}
+.checkbox {
+  position: relative;
+  top: -0.25rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+.checkbox:before {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+}
+.checkbox:checked:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: .5rem;
+  border-color: #9C27B0;
+  border-top-style: none;
+  border-right-style: none;
+}
+.checkbox:after {
+  content: "";
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #fff;
+  cursor: pointer;
 }

@@ -14,6 +14,228 @@
     .input-bar
       span 申请时间
       input(type="text")
+  .add-new-card.clear
+    .title(font="FZLTCHJW.TTF") 项目信息
+    .input-bar
+      span 项目名称
+      input(type="text")
+    .input-bar
+      span 上线地址
+      input(type="text")
+  .add-new-card.clear
+    .title(font="FZLTCHJW.TTF") 需求信息
+    .input-bar
+      span 需求名称
+      input(type="text")
+    .input-bar
+      span 上线日期
+      input(type="text")
+    .input-bar
+      span 需求类型
+      select
+        option(value ="volvo") 演播厅活动
+    .input-bar
+      span 完成日期
+      input(type="text")
+    .input-bar
+      span 选择场次
+      select
+        option(value ="场次1") 场次1
+        option(value ="场次2") 场次2
+        option(value ="场次3") 场次3
+        option(value ="场次4") 场次4
+        option(value ="场次5") 场次5
+  //- 访谈选择
+  .add-new-card.clear
+    .title(font="FZLTCHJW.TTF") 访谈详情
+    .clear
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="2号厅访谈")
+        span 2号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="3号厅访谈")
+        span 3号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="4号厅访谈")
+        span 4号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="5号厅访谈")
+        span 5号厅访谈
+  .add-new-card.clear
+    .title(font="FZLTCHJW.TTF") 需求详情
+    .clear
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="页面+模板+测试")
+        span 页面+模板+测试
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="H5")
+        span H5
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="小程序")
+        span 小程序
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="修改+上传")
+        span 修改+上传
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="专题+官网(设计)")
+        span 专题+官网(设计)
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="图解")
+        span 图解
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="海报/宣传页")
+        span 海报/宣传页
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="活动包装")
+        span 活动包装
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="Banner")
+        span Banner
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="PPT设计/页")
+        span PPT设计/页
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="logo设计")
+        span logo设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="书籍装帧/套")
+        span 书籍装帧/套
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="表情设计")
+        span 表情设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="3D设计")
+        span 3D设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="宣传手册")
+        span 宣传手册
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="投标设计方案")
+        span 投标设计方案
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="界面设计")
+        span 界面设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="编程")
+        span 编程
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="设计师")
+        span 设计师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="工程师")
+        span 工程师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="三维设计师")
+        span 三维设计师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="产品经理")
+        span 产品经理
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="三维工程师")
+        span 三维工程师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="动画设计(AE)")
+        span 动画设计(AE)
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="手绘等非常规创意动画")
+        span 手绘等非常规创意动画
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="视频直播")
+        span 视频直播
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="新闻采访（非专题片）")
+        span 新闻采访（非专题片）
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="视频栏目包装")
+        span 视频栏目包装	
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="模型类别")
+        span 模型类别
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="专题片")
+        span 专题片
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="纪录片")
+        span 纪录片
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="宣传片")
+        span 宣传片								
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="主持人")
+        span 主持人
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="摄像")
+        span 摄像
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="摄影")
+        span 摄影
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="导播")
+        span 导播
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="现场导演")
+        span 现场导演
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="摇臂摄像师")
+        span 摇臂摄像师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="编导")
+        span 编导
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="航拍师")
+        span 航拍师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="调音师")
+        span 调音师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="在线包")
+        span 在线包
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="剪辑师")
+        span 剪辑师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="高级后期（含AE、C4D）")
+        span 高级后期（含AE、C4D）
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="活动统筹")
+        span 活动统筹
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="路途（市外）+彩排")
+        span 路途（市外）+彩排
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="新闻配音")
+        span 新闻配音
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="宣传片配音")
+        span 宣传片配音
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="2号厅访谈")
+        span 2号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="3号厅访谈")
+        span 3号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="4号厅访谈")
+        span 4号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="5号厅访谈")
+        span 5号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="1号厅活动")
+        span 1号厅活动
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="5号厅活动")
+        span 5号厅活动
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="其他")
+        span 其他
+  .add-new-card.clear
+    .title(font="FZLTCHJW.TTF") 需求描述
+    textarea(id="description" placeholder="详细需求描述")
+    input(type="file" value="上传附件" name="accessory" id="file")
+  .submit-box.clear
+    input#submit(type="button" value="提交")
+    input#clear(type="button" value="重置")
 </template>
 
 
@@ -21,25 +243,77 @@
 .add-new {
   height: calc(100% - 51px);
   padding: 10px;
+  overflow: auto;
 }
 .add-new-card {
   background-color: white;
   border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 1px 1px 3px #ccc;
 }
 .input-bar {
   float: left;
   display: flex;
   line-height: 30px;
-  width: 300px;
+  width: 265px;
   justify-content: space-between;
-  margin: 0 10px;
   margin-bottom: 15px;
+  margin-right: 35px;
+  font-size: 16px;
+  input {
+    padding: 0 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 150px;
+    text-align: left;
+    box-sizing: border-box;
+  }
 }
 .title {
-  font-size: 20px;
-  margin: 0 10px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 20px;
   border-bottom: 1px solid #ddedec;
   margin-bottom: 20px;
+  color: #333;
+  padding-bottom: 10px;
+}
+select {
+  padding: 0 5px;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+  width: 150px;
+  text-align: left;
+  box-sizing: border-box;
+  color: #333;
+}
+textarea {
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+  height: 140px;
+  padding: 1%;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+input[type="file"] {
+}
+.submit-box {
+  input {
+    width: 110px;
+    line-height: 40px;
+    background-color: #009fe9;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 40px;
+  }
+}
+.submit-box {
+  display: flex;
+  justify-content: center;
 }
 </style>

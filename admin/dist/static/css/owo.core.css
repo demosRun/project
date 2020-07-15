@@ -70,29 +70,82 @@ li {
 .add-new {
   height: calc(100% - 51px);
   padding: 10px;
+  overflow: auto;
 }
 
 .add-new .add-new-card {
   background-color: white;
   border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 1px 1px 3px #ccc;
 }
 
 .add-new .input-bar {
   float: left;
   display: flex;
   line-height: 30px;
-  width: 300px;
+  width: 265px;
   justify-content: space-between;
-  margin: 0 10px;
   margin-bottom: 15px;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.add-new .input-bar input {
+  padding: 0 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 150px;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .add-new .title {
-  font-size: 20px;
-  margin: 0 10px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 20px;
   border-bottom: 1px solid #ddedec;
   margin-bottom: 20px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.add-new select {
+  padding: 0 5px;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+  width: 150px;
+  text-align: left;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.add-new textarea {
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+  height: 140px;
+  padding: 1%;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.add-new .submit-box input {
+  width: 110px;
+  line-height: 40px;
+  background-color: #009fe9;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 40px;
+}
+
+.add-new .submit-box {
+  display: flex;
+  justify-content: center;
 }
 .admin {
   background-size: 100% 100%;
