@@ -2,38 +2,87 @@
 .pingjia
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 项目评价
-    .pingjia-bar.clear
+    .pingjia-bar.shixiao.clear
       .left 完成时效：
       .right.clear
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-    .pingjia-bar.clear
+        .icon(o-tap="setshixiao(1)") &#xe632;
+        .icon(o-tap="setshixiao(2)") &#xe632;
+        .icon(o-tap="setshixiao(3)") &#xe632;
+        .icon(o-tap="setshixiao(4)") &#xe632;
+        .icon(o-tap="setshixiao(5)") &#xe632;
+    .pingjia-bar.zhiliang.clear
       .left 作品质量：
       .right.clear
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-    .pingjia-bar.clear
+        .icon(o-tap="setzhiliang(1)") &#xe632;
+        .icon(o-tap="setzhiliang(2)") &#xe632;
+        .icon(o-tap="setzhiliang(3)") &#xe632;
+        .icon(o-tap="setzhiliang(4)") &#xe632;
+        .icon(o-tap="setzhiliang(5)") &#xe632;
+    .pingjia-bar.chuangxin.clear
       .left 技术创新：
       .right.clear
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
-        .icon &#xe632;
+        .icon(o-tap="setchuangxin(1)") &#xe632;
+        .icon(o-tap="setchuangxin(2)") &#xe632;
+        .icon(o-tap="setchuangxin(3)") &#xe632;
+        .icon(o-tap="setchuangxin(4)") &#xe632;
+        .icon(o-tap="setchuangxin(5)") &#xe632;
     .input-bar.clear
       .left 浏览地址：
       .right.clear
         input(type="text" placeholder="完整地址(匿名)")
-    .text 留言评价
+    .text 留言评价：
     textarea(id="description" placeholder="详细需求描述")
+    .submit-box.clear
+      input#submit(type="button" value="提交")
+      input#clear(type="button" value="重置")
 </template>
 
+<script>
+  module.exports = {
+    created: function () {
+      console.log('sdsd')
+    },
+    setshixiao: function (ind) {
+      const starsList = this.queryAll('.shixiao .icon')
+      for (let index = 0; index < starsList.length; index++) {
+        const element = starsList[index];
+        if (index < ind) {
+          setTimeout(() => {
+            element.classList.add('active')
+          }, index * 60);
+        } else {
+          element.classList.remove('active')
+        }
+      }
+    },
+    setzhiliang: function (ind) {
+      const starsList = this.queryAll('.zhiliang .icon')
+      for (let index = 0; index < starsList.length; index++) {
+        const element = starsList[index];
+        if (index < ind) {
+          setTimeout(() => {
+            element.classList.add('active')
+          }, index * 60);
+        } else {
+          element.classList.remove('active')
+        }
+      }
+    },
+    setchuangxin: function (ind) {
+      const starsList = this.queryAll('.chuangxin .icon')
+      for (let index = 0; index < starsList.length; index++) {
+        const element = starsList[index];
+        if (index < ind) {
+          setTimeout(() => {
+            element.classList.add('active')
+          }, index * 60);
+        } else {
+          element.classList.remove('active')
+        }
+      }
+    }
+  }
+</script>
 
 <style lang="less">
 .pingjia {
@@ -60,6 +109,9 @@
       font-size: 24px;
       cursor: pointer;
     }
+    .active {
+      color: gold;
+    }
   }
 }
 .input-bar {
@@ -80,5 +132,11 @@
 .text {
   line-height: 40px;
   font-size: 18px;
+}
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  display: block;
+  height: 120px;
 }
 </style>

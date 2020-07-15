@@ -98,6 +98,10 @@ li {
   cursor: pointer;
 }
 
+.pingjia .pingjia-bar .right .active {
+  color: gold;
+}
+
 .pingjia .input-bar {
   line-height: 40px;
   font-size: 18px;
@@ -118,6 +122,13 @@ li {
 .pingjia .text {
   line-height: 40px;
   font-size: 18px;
+}
+
+.pingjia textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  display: block;
+  height: 120px;
 }
 .admin {
   background-size: 100% 100%;
