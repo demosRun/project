@@ -6,7 +6,7 @@
       .menu-title
         .icon &#xe60d;
         span 竞单管理
-      a.menu-item(href="#") 等待竞单
+      a.menu-item.active(href="#") 等待竞单
       a.menu-item(href="#") 等待确认
       a.menu-item(href="#") 正在进行
       a.menu-item(href="#") 已完成竞单
@@ -79,7 +79,7 @@
   background: linear-gradient(#f9f7f7 80%, #bcbcd0);
 }
 .menu {
-  height: calc(100% - 120px);
+  height: calc(100% - 110px);
   overflow: auto;
 }
 .menu-box {
@@ -115,11 +115,11 @@
 .menu-item {
   background-image: url('@|doit.png|');
   color: #333;
-  padding-left: 60px;
+  padding-left: 55px;
   line-height: 33px;
   font-size: 17px;
   background-repeat: no-repeat;
-  background-position: 25px 3px;
+  background-position: 25px 1px;
   background-size: 30px;
   display: block;
 }
@@ -148,5 +148,10 @@
   overflow: auto;
   border-radius: 3px;
   padding: 10px;
+}
+.menu-item.active {
+  background-color: gainsboro;
+  color: royalblue;
+  background-image: url('@|doit-active.png|');
 }
 </style>

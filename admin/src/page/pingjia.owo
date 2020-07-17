@@ -33,8 +33,8 @@
     .text 留言评价：
     textarea(id="description" placeholder="详细需求描述")
     .submit-box.clear
-      input#submit(type="button" value="提交")
-      input#clear(type="button" value="重置")
+      input#submit(type="button" value="提交" o-hover="shadow")
+      input#clear(type="button" value="重置" o-hover="shadow")
 </template>
 
 <script>
@@ -138,5 +138,12 @@ textarea {
   padding: 10px;
   display: block;
   height: 120px;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+  border-color: #e0e0e0;
+}
+textarea:focus {
+  border-color: darkkhaki;
 }
 </style>

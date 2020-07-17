@@ -19,9 +19,9 @@
     .input-bar
       span 项目名称
       input(type="text")
-    .input-bar
+    .input-bar(style="width: 500px;")
       span 上线地址
-      input(type="text")
+      input(type="text" style="width: 385px;")
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 需求信息
     .input-bar
@@ -48,7 +48,7 @@
   //- 访谈选择
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 访谈详情
-    .clear
+    .clear.check-box
       label.checkbox-item
         input.checkbox(type="checkbox" value="2号厅访谈")
         span 2号厅访谈
@@ -63,7 +63,7 @@
         span 5号厅访谈
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 需求详情
-    .clear
+    .clear.check-box
       label.checkbox-item
         input.checkbox(type="checkbox" value="页面+模板+测试")
         span 页面+模板+测试
@@ -233,9 +233,9 @@
     .title(font="FZLTCHJW.TTF") 需求描述
     textarea(id="description" placeholder="详细需求描述")
     input(type="file" value="上传附件" name="accessory" id="file")
-  .submit-box.clear
-    input#submit(type="button" value="提交")
-    input#clear(type="button" value="重置")
+    .submit-box.clear
+      input#submit(type="button" value="提交" o-hover="shadow")
+      input#clear(type="button" value="重置" o-hover="shadow")
 </template>
 
 
@@ -251,7 +251,7 @@
   line-height: 30px;
   width: 265px;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-top: 15px;
   margin-right: 35px;
   font-size: 18px;
   color: #444;
@@ -294,22 +294,5 @@ textarea:focus {
   border-color: darkkhaki;
 }
 input[type="file"] {
-}
-.submit-box {
-  input {
-    width: 110px;
-    line-height: 40px;
-    background-color: #009fe9;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin: 0 40px;
-  }
-}
-.submit-box {
-  display: flex;
-  justify-content: center;
 }
 </style>
