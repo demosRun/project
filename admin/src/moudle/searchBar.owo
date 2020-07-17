@@ -85,12 +85,15 @@ input[type="button"] {
   margin-right: 10px;
   cursor: pointer;
   font-size: 15px;
-  line-height: 28px;
+  line-height: 30px;
 }
 #search {
   background-color: #009fe9;
   color: white;
   border: 1px solid #009fe9;
+}
+#search:hover, #clear:hover {
+  box-shadow: 1px 1px 2px #ccc9c9;
 }
 .icon.fl {
   line-height: 30px;

@@ -241,7 +241,7 @@
 
 <style lang="less">
 .add-new {
-  height: calc(100% - 51px);
+  height: calc(100% - 61px);
   padding: 10px;
   overflow: auto;
 }

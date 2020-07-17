@@ -1,0 +1,125 @@
+<template lang="pug">
+.select
+  .title-bar.clear
+    .log.fr
+      span#username 全媒体制作二部 蒲鸽
+      span#logout 登出
+  .select-card-box.clear
+    .card-item.fl(o-hover="float")
+      .icon &#xe7f1;
+      h2 自主创新
+      p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
+    .card-item.fl(o-hover="float")
+      .icon &#xe7f1;
+      h2 日常需求
+      p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
+    .card-item.fl(o-hover="float")
+      .icon &#xe64b;
+      h2 临时需求
+      p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
+    .card-item.fl(o-hover="float")
+      .icon &#xe723;
+      h2 重大项目
+      p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      console.log('1111111')
+    }
+  }
+</script>
+
+
+<style lang="less">
+.select {
+  background-image: url('@|bg.jpg|');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eee5e6;
+}
+.select-card-box {
+  width: 1200px;
+  height: 370px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  .card-item {
+    background-color: white;
+    width: 220px;
+    height: 310px;
+    padding: 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #8e82a2;
+    cursor: pointer;
+    .icon {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      margin: 20px auto;
+      display: block;
+      font-size: 60px;
+      color: #f6c566;
+    }
+    h2 {
+      line-height: 45px;
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 8px;
+      color: #009fe9;
+    }
+    p {
+      text-indent: 2em;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #666;
+      margin-top: 10px;
+    }
+  }
+  .card-item:hover {
+    h2 {
+      color: #009fe9;
+    }
+    .show {
+      opacity: 1;
+    }
+  }
+}
+.title-bar {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #eae5e5;
+}
+.log {
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  span {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+}
+.show {
+  position: absolute;
+  bottom: 15px;
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #96b544;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  // opacity: 0;
+  transition: opacity 0.3s;
+}
+</style>

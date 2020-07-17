@@ -86,12 +86,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 @font-face {
   font-family: 'iconfont';  /* project id 1929754 */
-  src: url('//at.alicdn.com/t/font_1929754_co8cid2cvum.eot');
-  src: url('//at.alicdn.com/t/font_1929754_co8cid2cvum.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1929754_co8cid2cvum.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1929754_co8cid2cvum.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1929754_co8cid2cvum.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1929754_co8cid2cvum.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.eot');
+  src: url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.svg#iconfont') format('svg');
 }
 
 .icon {

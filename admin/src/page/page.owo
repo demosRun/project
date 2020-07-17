@@ -44,13 +44,14 @@
       a.menu-item(href="#") 视频支持刊例价
   .right.fl
     .title-bar.clear
+      .page-name.fl 当前页面名称
       .log.fr
-        span#username 全媒体制作二部 蒲鸽
+        span#username 全媒体制作二部 | 蒲鸽
         span#logout 登出
     //- 内容显示区域
 
     //- 设计刊例价
-    //- plug(_name="sheji" _src="./src/moudle/sheji.owo")
+    plug(_name="sheji" _src="./src/moudle/sheji.owo")
     //- 视频刊例价
     //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
     //- 竞单列表
@@ -58,7 +59,9 @@
     //- 演播厅需求
     //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
     //- 评价
-    plug(_name="pingjia" _src="./src/page/pingjia.owo")
+    //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
+    //- 调整
+    //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
 </template>
 
 <script>
@@ -128,11 +131,11 @@
   overflow: auto;
   width: calc(100% - 260px);
   .title-bar {
-    height: 30px;
+    height: 40px;
     border-bottom: 1px solid #eae5e5;
   }
   .log {
-    line-height: 30px;
+    line-height: 40px;
     font-size: 14px;
     color: #666;
     span {
@@ -144,14 +147,23 @@
 .box {
   margin: 5px;
   background-color: white;
-  height: calc(100% - 61px);
+  height: calc(100% - 71px);
   overflow: auto;
   border-radius: 3px;
   padding: 10px;
+  width: calc(100% - 30px);
 }
 .menu-item.active {
   background-color: gainsboro;
   color: royalblue;
   background-image: url('@|doit-active.png|');
+}
+.page-name {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #2b73ce;
+  letter-spacing: 2px;
 }
 </style>

@@ -2,39 +2,40 @@
 .pingjia
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 项目评价
-    .pingjia-bar.shixiao.clear
-      .left 完成时效：
-      .right.clear
-        .icon(o-tap="setshixiao(1)") &#xe632;
-        .icon(o-tap="setshixiao(2)") &#xe632;
-        .icon(o-tap="setshixiao(3)") &#xe632;
-        .icon(o-tap="setshixiao(4)") &#xe632;
-        .icon(o-tap="setshixiao(5)") &#xe632;
-    .pingjia-bar.zhiliang.clear
-      .left 作品质量：
-      .right.clear
-        .icon(o-tap="setzhiliang(1)") &#xe632;
-        .icon(o-tap="setzhiliang(2)") &#xe632;
-        .icon(o-tap="setzhiliang(3)") &#xe632;
-        .icon(o-tap="setzhiliang(4)") &#xe632;
-        .icon(o-tap="setzhiliang(5)") &#xe632;
-    .pingjia-bar.chuangxin.clear
-      .left 技术创新：
-      .right.clear
-        .icon(o-tap="setchuangxin(1)") &#xe632;
-        .icon(o-tap="setchuangxin(2)") &#xe632;
-        .icon(o-tap="setchuangxin(3)") &#xe632;
-        .icon(o-tap="setchuangxin(4)") &#xe632;
-        .icon(o-tap="setchuangxin(5)") &#xe632;
-    .input-bar.clear
-      .left 浏览地址：
-      .right.clear
-        input(type="text" placeholder="完整地址(匿名)")
-    .text 留言评价：
-    textarea(id="description" placeholder="详细需求描述")
-    .submit-box.clear
-      input#submit(type="button" value="提交" o-hover="shadow")
-      input#clear(type="button" value="重置" o-hover="shadow")
+    .pingjia-box
+      .pingjia-bar.shixiao.clear
+        .left 完成时效：
+        .right.clear
+          .icon(o-tap="setshixiao(1)") &#xe632;
+          .icon(o-tap="setshixiao(2)") &#xe632;
+          .icon(o-tap="setshixiao(3)") &#xe632;
+          .icon(o-tap="setshixiao(4)") &#xe632;
+          .icon(o-tap="setshixiao(5)") &#xe632;
+      .pingjia-bar.zhiliang.clear
+        .left 作品质量：
+        .right.clear
+          .icon(o-tap="setzhiliang(1)") &#xe632;
+          .icon(o-tap="setzhiliang(2)") &#xe632;
+          .icon(o-tap="setzhiliang(3)") &#xe632;
+          .icon(o-tap="setzhiliang(4)") &#xe632;
+          .icon(o-tap="setzhiliang(5)") &#xe632;
+      .pingjia-bar.chuangxin.clear
+        .left 技术创新：
+        .right.clear
+          .icon(o-tap="setchuangxin(1)") &#xe632;
+          .icon(o-tap="setchuangxin(2)") &#xe632;
+          .icon(o-tap="setchuangxin(3)") &#xe632;
+          .icon(o-tap="setchuangxin(4)") &#xe632;
+          .icon(o-tap="setchuangxin(5)") &#xe632;
+      .input-bar.clear
+        .left 浏览地址：
+        .right.clear
+          input(type="text" placeholder="完整地址(匿名)")
+      .text 留言评价：
+      textarea(id="description" placeholder="详细需求描述")
+      .submit-box.clear
+        input#submit(type="button" value="提交" o-hover="shadow")
+        input#clear(type="button" value="重置" o-hover="shadow")
 </template>
 
 <script>
@@ -86,13 +87,13 @@
 
 <style lang="less">
 .pingjia {
-  height: calc(100% - 51px);
+  height: calc(100% - 61px);
   padding: 10px;
   overflow: auto;
 }
 .pingjia-bar {
   line-height: 40px;
-  font-size: 18px;
+  font-size: 16px;
   width: 500px;
   display: flex;
   justify-content: space-between;
@@ -116,7 +117,7 @@
 }
 .input-bar {
   line-height: 40px;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   input {
@@ -131,19 +132,21 @@
 }
 .text {
   line-height: 40px;
-  font-size: 18px;
+  font-size: 16px;
 }
 textarea {
   width: calc(100% - 20px);
   padding: 10px;
   display: block;
   height: 120px;
-  margin-top: 10px;
   outline: none;
   border-radius: 5px;
   border-color: #e0e0e0;
 }
 textarea:focus {
   border-color: darkkhaki;
+}
+.pingjia-box {
+  margin-top: 10px;
 }
 </style>

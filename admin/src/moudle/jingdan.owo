@@ -121,7 +121,7 @@ a {
   display: block;
   background-color: transparent;
   text-decoration: none;
-  color: #4430ad;
+  color: #7a61ff;
   cursor: pointer;
 }
 a:hover {

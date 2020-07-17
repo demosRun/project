@@ -86,12 +86,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 @font-face {
   font-family: 'iconfont';  /* project id 1929754 */
-  src: url('https://cunchu.site/people/qiangdan/iconfont.eot');
-  src: url('https://cunchu.site/people/qiangdan/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('https://cunchu.site/people/qiangdan/iconfont.woff2') format('woff2'),
-  url('https://cunchu.site/people/qiangdan/iconfont.woff') format('woff'),
-  url('https://cunchu.site/people/qiangdan/iconfont.ttf') format('truetype'),
-  url('https://cunchu.site/people/qiangdan/iconfont.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.eot');
+  src: url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1929754_pbulv81h1lk.svg#iconfont') format('svg');
 }
 
 .icon {
@@ -218,7 +218,7 @@ input[type="number"]{
 }
 
 .card-box .title {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   border-bottom: 1px solid #ddedec;
   color: #333;
@@ -251,4 +251,3 @@ input[type="number"]{
 .submit-box input#clear {
   background-color: #bdbdbd;
 }
-
