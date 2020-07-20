@@ -44,14 +44,17 @@
       a.menu-item(href="#") 视频支持刊例价
   .right.fl
     .title-bar.clear
-      .page-name.fl 当前页面名称
+      .page-name.fl
+        a(href="#") 等待竞单
+        .icon &#xe601;
+        span 全国党员读书平台设计需求
       .log.fr
         span#username 全媒体制作二部 | 蒲鸽
         span#logout 登出
     //- 内容显示区域
 
     //- 设计刊例价
-    plug(_name="sheji" _src="./src/moudle/sheji.owo")
+    //- plug(_name="sheji" _src="./src/moudle/sheji.owo")
     //- 视频刊例价
     //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
     //- 竞单列表
@@ -62,6 +65,8 @@
     //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
     //- 调整
     //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
+    //- 需求详情
+    plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
 </template>
 
 <script>

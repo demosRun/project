@@ -1,0 +1,117 @@
+<template lang="pug">
+.xiangqing.clear
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 申请人信息
+    .input-bar
+      .left
+        .icon &#xe618;
+        span 申请人:
+      input(type="text" disabled="disabled" value="雷军")
+    .input-bar
+      .left
+        .icon &#xe603;
+        span 申请部门:
+      input(type="text" disabled="disabled" value="商务部")
+    .input-bar
+      .left
+        .icon &#xe60c;
+        span 联系方式:
+      input(type="text" disabled="disabled" value="13111111111")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span 申请时间:
+      input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求信息
+    .input-bar
+      .left
+        .icon &#xe6bd;
+        span 需求名称:
+      input(type="text" disabled="disabled" value="全国党员读书平台设计需求")
+    .input-bar
+      .left
+        .icon &#xe618;
+        span 上线日期:
+      input(type="text" disabled="disabled" value="2020-07-31")
+    .input-bar
+      .left
+        .icon &#xe627;
+        span 需求类型:
+      input(type="text" disabled="disabled" value="演播厅活动")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span 完成日期:
+      input(type="text" disabled="disabled" value="2020-07-31")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span 选择场次:
+      input(type="text" disabled="disabled" value="场次1")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 详细需求
+    .item-box
+      span 页面+模板+测试
+      span 小程序
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求描述
+    textarea(id="description" placeholder="详细需求描述") 7月24日下午两点在30层会议室召开总书记报道经验交流会，需要内网直播，摄像，导播，指定全媒体制作一部承接。
+    //- 查看附件
+    .show-file
+      a(href="#")
+        .icon &#xe696;
+        span 附件-内网直播说明文件.zip
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+    }
+  }
+</script>
+
+<style lang="less">
+.xiangqing {
+  height: calc(100% - 61px);
+  padding: 10px;
+  overflow: auto;
+}
+.item-box {
+  margin-top: 15px;
+  span {
+    background-color: lightskyblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
+.card-box textarea {
+  box-shadow: none;
+  margin-top: 15px;
+  border: none;
+  margin-bottom: 0;
+  background-color: #eefff5;
+  color: #333;
+}
+.show-file {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 8px;
+  display: flex;
+  a {
+    display: flex;
+  }
+  .icon {
+    width: 24px;
+    text-align: left;
+    font-size: 18px;
+    color: #009fe9;
+  }
+  span {
+    color: #627fb3;
+  }
+}
+</style>
