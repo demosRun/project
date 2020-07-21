@@ -10,6 +10,9 @@ body, html {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }
+input, textarea {
+  font-family: 'pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei','simsun',sans-serif;
+}
 html {
   background-color: #f4f4f4;
   background-repeat: no-repeat;
@@ -86,12 +89,12 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 @font-face {
   font-family: 'iconfont';  /* project id 1929754 */
-  src: url('//at.alicdn.com/t/font_1929754_e6pqwlwwlm.eot');
-  src: url('//at.alicdn.com/t/font_1929754_e6pqwlwwlm.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1929754_e6pqwlwwlm.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1929754_e6pqwlwwlm.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1929754_e6pqwlwwlm.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1929754_e6pqwlwwlm.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1929754_gt4hr8uhook.eot');
+  src: url('//at.alicdn.com/t/font_1929754_gt4hr8uhook.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1929754_gt4hr8uhook.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1929754_gt4hr8uhook.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1929754_gt4hr8uhook.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1929754_gt4hr8uhook.svg#iconfont') format('svg');
 }
 
 .icon {
@@ -263,7 +266,7 @@ input[type="number"]{
 
 .page-name .icon {
   margin: 0 6px;
-  color: #666;
+  color: #999;
 }
 
 .page-name span {
@@ -281,7 +284,7 @@ input[type="number"]{
   justify-content: space-between;
   margin-top: 15px;
   margin-right: 55px;
-  font-size: 18px;
+  font-size: 19px;
   color: #444;
   align-items: center;
 }
@@ -330,13 +333,13 @@ input[type="number"]{
 
 .card-box input[disabled] {
   border: none;
-  background-color: #eefff5;
-  color: #333;
+  background-color: #f2f2f2;
   line-height: 30px;
+  color: #000;
 }
 
 .card-box select[disabled] {
-  background-color: #eefff5;
+  background-color: #ecf3fb;
   color: #333;
   appearance:none;
   -moz-appearance:none;
@@ -350,7 +353,7 @@ input[type="number"]{
 .input-bar .left .icon {
   width: 40px;
   text-align: center;
-  font-size: 26px;
+  font-size: 23px;
   color: cornflowerblue;
   line-height: 40px;
 }

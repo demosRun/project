@@ -5,49 +5,49 @@
     .input-bar
       .left
         .icon &#xe618;
-        span 申请人:
+        span(font="DFQianLongXing.ttf") 申请人:
       input(type="text" disabled="disabled" value="雷军")
     .input-bar
       .left
         .icon &#xe603;
-        span 申请部门:
+        span(font="DFQianLongXing.ttf") 申请部门:
       input(type="text" disabled="disabled" value="商务部")
     .input-bar
       .left
         .icon &#xe60c;
-        span 联系方式:
+        span(font="DFQianLongXing.ttf") 联系方式:
       input(type="text" disabled="disabled" value="13111111111")
     .input-bar
       .left
         .icon &#xe602;
-        span 申请时间:
+        span(font="DFQianLongXing.ttf") 申请时间:
       input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 需求信息
     .input-bar
       .left
         .icon &#xe6bd;
-        span 需求名称:
+        span(font="DFQianLongXing.ttf") 需求名称:
       input(type="text" disabled="disabled" value="全国党员读书平台设计需求")
     .input-bar
       .left
         .icon &#xe618;
-        span 上线日期:
+        span(font="DFQianLongXing.ttf") 上线日期:
       input(type="text" disabled="disabled" value="2020-07-31")
     .input-bar
       .left
         .icon &#xe627;
-        span 需求类型:
+        span(font="DFQianLongXing.ttf") 需求类型:
       input(type="text" disabled="disabled" value="演播厅活动")
     .input-bar
       .left
         .icon &#xe602;
-        span 完成日期:
+        span(font="DFQianLongXing.ttf") 完成日期:
       input(type="text" disabled="disabled" value="2020-07-31")
     .input-bar
       .left
         .icon &#xe602;
-        span 选择场次:
+        span(font="DFQianLongXing.ttf") 选择场次:
       input(type="text" disabled="disabled" value="场次1")
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 详细需求
@@ -82,7 +82,7 @@
   span {
     background-color: lightskyblue;
     color: white;
-    padding: 5px 10px;
+    padding: 3px 10px;
     border-radius: 3px;
     margin-right: 10px;
     font-size: 16px;
@@ -93,8 +93,9 @@
   margin-top: 15px;
   border: none;
   margin-bottom: 0;
-  background-color: #eefff5;
-  color: #333;
+  background-color: #f2f2f2;
+  line-height: 30px;
+  color: #000;
 }
 .show-file {
   font-size: 14px;

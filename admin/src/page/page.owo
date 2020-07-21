@@ -145,7 +145,12 @@
     color: #666;
     span {
       margin-right: 20px;
+    }
+    #logout {
       cursor: pointer;
+    }
+    #logout:hover {
+      color: #009fe9;
     }
   }
 }
