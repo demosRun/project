@@ -1,72 +1,73 @@
 <template lang="pug">
 .admin.clear
-  .menu-box.left.fl
-    .title(font="FZLTCHJW.TTF") 全媒体项目管理系统
-    .menu
-      .menu-title
-        .icon &#xe60d;
-        span 竞单管理
-      a.menu-item.active(href="#") 等待竞单
-      a.menu-item(href="#") 等待确认
-      a.menu-item(href="#") 正在进行
-      a.menu-item(href="#") 已完成竞单
-      a.menu-item(href="#") 竞单失败
+  .title-bar.clear
+    .title.fl(font="FZLTCHJW.TTF") 全媒体项目管理系统
+    .page-name.fl
+      a(href="#") 等待竞单
+      .icon &#xe601;
+      span 全国党员读书平台设计需求
+    .log.fr
+      span#username 全媒体制作二部 | 蒲鸽
+      span#logout 登出
+  .conn-box
+    .menu-box.left.fl
+      .menu
+        .menu-title
+          .icon &#xe60d;
+          span 竞单管理
+        a.menu-item.active(href="#") 等待竞单
+        a.menu-item(href="#") 等待确认
+        a.menu-item(href="#") 正在进行
+        a.menu-item(href="#") 已完成竞单
+        a.menu-item(href="#") 竞单失败
 
-      .menu-title
-        .icon &#xe611;
-        span 创建需求
-      a.menu-item(href="#") 制作需求
-      a.menu-item(href="#") 访谈需求
-      a.menu-item(href="#") 演播厅活动
-      a.menu-item(href="#") 自主创新
-      //- 经营部门
-      .menu-title
-        .icon &#xe611;
-        span 需求管理
-      a.menu-item(href="#") 待审核需求
-      a.menu-item(href="#") 历史需求
-      .menu-title
-        .icon &#xe617;
-        span 项目管理
-      a.menu-item(href="#") 分值统计
-      a.menu-item(href="#") 配额统计
-      a.menu-item(href="#") 自主创新
-      //- 管理员
-      .menu-title
-        .icon &#xe780;
-        span 管理工具
-      a.menu-item(href="#") 调整分值
-      a.menu-item(href="#") 配额统计
-      .menu-title
-        .icon &#xe685;
-        span 相关文档
-      a.menu-item(href="#") 设计制作刊例价
-      a.menu-item(href="#") 视频支持刊例价
-  .right.fl
-    .title-bar.clear
-      .page-name.fl
-        a(href="#") 等待竞单
-        .icon &#xe601;
-        span 全国党员读书平台设计需求
-      .log.fr
-        span#username 全媒体制作二部 | 蒲鸽
-        span#logout 登出
-    //- 内容显示区域
+        .menu-title
+          .icon &#xe611;
+          span 创建需求
+        a.menu-item(href="#") 制作需求
+        a.menu-item(href="#") 访谈需求
+        a.menu-item(href="#") 演播厅活动
+        a.menu-item(href="#") 自主创新
+        //- 经营部门
+        .menu-title
+          .icon &#xe611;
+          span 需求管理
+        a.menu-item(href="#") 待审核需求
+        a.menu-item(href="#") 历史需求
+        .menu-title
+          .icon &#xe617;
+          span 项目管理
+        a.menu-item(href="#") 分值统计
+        a.menu-item(href="#") 配额统计
+        a.menu-item(href="#") 自主创新
+        //- 管理员
+        .menu-title
+          .icon &#xe780;
+          span 管理工具
+        a.menu-item(href="#") 调整分值
+        a.menu-item(href="#") 配额统计
+        .menu-title
+          .icon &#xe685;
+          span 相关文档
+        a.menu-item(href="#") 设计制作刊例价
+        a.menu-item(href="#") 视频支持刊例价
+    .right.fl
+      //- 内容显示区域
 
-    //- 设计刊例价
-    //- plug(_name="sheji" _src="./src/moudle/sheji.owo")
-    //- 视频刊例价
-    //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
-    //- 竞单列表
-    //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
-    //- 演播厅需求
-    //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
-    //- 评价
-    //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
-    //- 调整
-    //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
-    //- 需求详情
-    plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
+      //- 设计刊例价
+      //- plug(_name="sheji" _src="./src/moudle/sheji.owo")
+      //- 视频刊例价
+      //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
+      //- 竞单列表
+      //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+      //- 演播厅需求
+      //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
+      //- 评价
+      //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
+      //- 调整
+      //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
+      //- 需求详情
+      plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
 </template>
 
 <script>
@@ -85,10 +86,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background: linear-gradient(#f9f7f7 80%, #bcbcd0);
-}
-.menu {
-  height: calc(100% - 110px);
-  overflow: auto;
 }
 .menu-box {
   width: 260px;
@@ -167,13 +164,5 @@
   background-color: gainsboro;
   color: royalblue;
   background-image: url('@|doit-active.png|');
-}
-.page-name {
-  font-size: 18px;
-  margin-left: 10px;
-  font-weight: bold;
-  line-height: 40px;
-  color: #2b73ce;
-  letter-spacing: 2px;
 }
 </style>

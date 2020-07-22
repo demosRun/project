@@ -136,11 +136,6 @@ li {
   background: linear-gradient(#f9f7f7 80%, #bcbcd0);
 }
 
-.menu {
-  height: calc(100% - 110px);
-  overflow: auto;
-}
-
 .menu-box {
   width: 260px;
   background: white;
@@ -230,14 +225,5 @@ li {
   background-color: gainsboro;
   color: royalblue;
   background-image: url('../resource/doit-active.png');
-}
-
-.page-name {
-  font-size: 18px;
-  margin-left: 10px;
-  font-weight: bold;
-  line-height: 40px;
-  color: #2b73ce;
-  letter-spacing: 2px;
 }
 
