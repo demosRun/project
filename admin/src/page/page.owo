@@ -60,14 +60,14 @@
       //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
       //- 竞单列表
       //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
-      //- 演播厅需求
+      //- 新建需求
       //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
       //- 评价
-      //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
+      plug(_name="pingjia" _src="./src/page/pingjia.owo")
       //- 调整
       //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
       //- 需求详情
-      plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
+      //- plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
 </template>
 
 <script>
@@ -113,7 +113,6 @@
 .box {
   margin: 5px;
   background-color: white;
-  height: calc(100% - 71px);
   overflow: auto;
   border-radius: 3px;
   padding: 10px;
