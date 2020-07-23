@@ -101,33 +101,6 @@
     padding-left: 15px;
   }
 }
-.menu-title {
-  color: #333;
-  padding-left: 5px;
-  display: flex;
-  font-size: 18px;
-  line-height: 45px;
-  font-weight: bold;
-  .icon {
-    font-size: 25px;
-    display: inline-block;
-    width: 45px;
-    text-align: center;
-    line-height: 41px;
-    color: #b372ef;
-  }
-}
-.menu-item {
-  background-image: url('@|doit.png|');
-  color: #333;
-  padding-left: 55px;
-  line-height: 33px;
-  font-size: 17px;
-  background-repeat: no-repeat;
-  background-position: 25px 1px;
-  background-size: 30px;
-  display: block;
-}
 .right {
   height: 100%;
   overflow: auto;
@@ -135,20 +108,6 @@
   .title-bar {
     height: 40px;
     border-bottom: 1px solid #eae5e5;
-  }
-  .log {
-    line-height: 40px;
-    font-size: 14px;
-    color: #666;
-    span {
-      margin-right: 20px;
-    }
-    #logout {
-      cursor: pointer;
-    }
-    #logout:hover {
-      color: #009fe9;
-    }
   }
 }
 .box {

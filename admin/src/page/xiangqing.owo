@@ -62,6 +62,47 @@
       a(href="#")
         .icon &#xe696;
         span 附件-内网直播说明文件.zip
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 竞标人信息
+    .input-bar
+      .left
+        .icon &#xe618;
+        span(font="DFQianLongXing.ttf") 竞标人:
+      input(type="text" disabled="disabled" value="雷军")
+    .input-bar
+      .left
+        .icon &#xe603;
+        span(font="DFQianLongXing.ttf") 竞标部门:
+      input(type="text" disabled="disabled" value="商务部")
+    
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 申请时间:
+      input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 完成时间:
+      input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
+    .input-bar
+      .left
+        .icon &#xe708;
+        span(font="DFQianLongXing.ttf") 竞标分值  :
+      input(type="text" disabled="disabled" value="8")
+    .input-bar
+      .left
+        .icon &#xe60c;
+        span(font="DFQianLongXing.ttf") 联系方式:
+      input(type="text" disabled="disabled" value="13111111111")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 竞标留言
+    textarea(id="description" placeholder="竞标留言内容") 3个页面，5张海报 总计50分
+    //- 查看附件
+    .show-file
+      a(href="#")
+        .icon &#xe696;
+        span 附件-内网直播说明文件.zip
 </template>
 
 <script>
