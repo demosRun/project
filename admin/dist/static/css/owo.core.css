@@ -114,16 +114,18 @@ li {
   color: gold;
 }
 
-.pingjia .input-bar {
+.pingjia .pingjia-input-bar {
   line-height: 40px;
   font-size: 16px;
   display: flex;
   justify-content: space-between;
+  width: 810px;
 }
 
-.pingjia .input-bar input {
-  border: 2px solid #e0e0e0;
-  border-radius: 3px;
+.pingjia .pingjia-input-bar input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
   height: 30px;
   box-sizing: border-box;
   padding: 0 5px;
@@ -137,13 +139,16 @@ li {
 }
 
 .pingjia textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
+  width: calc(100% - 10px);
+  margin: 0 auto;
   display: block;
-  height: 120px;
+  height: 140px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
   outline: none;
-  border-radius: 5px;
-  border-color: #e0e0e0;
 }
 
 .pingjia textarea:focus {
@@ -176,13 +181,13 @@ li {
   padding-left: 15px;
 }
 
-.right {
+.right-box {
   height: 100%;
   overflow: auto;
   width: calc(100% - 260px);
 }
 
-.right .title-bar {
+.right-box .title-bar {
   height: 40px;
   border-bottom: 1px solid #eae5e5;
 }

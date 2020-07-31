@@ -51,7 +51,7 @@
           span 相关文档
         a.menu-item(href="#") 设计制作刊例价
         a.menu-item(href="#") 视频支持刊例价
-    .right.fl
+    .right-box.fl
       //- 内容显示区域
 
       //- 设计刊例价
@@ -101,7 +101,7 @@
     padding-left: 15px;
   }
 }
-.right {
+.right-box {
   height: 100%;
   overflow: auto;
   width: calc(100% - 260px);
