@@ -405,10 +405,28 @@ input[type="number"]{
   background-size: 30px;
   display: block;
   font-size: 15px;
+  position: relative;
 }
 .menu-item:hover {
   text-decoration: none;
   color: #009fe9;
+}
+
+.menu-item .num {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 22px;
+  line-height: 22px;
+  background-color: sandybrown;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  height: 22px;
+  border-radius: 14px;
+  font-size: 12px;
 }
 
 .menu-item.active {

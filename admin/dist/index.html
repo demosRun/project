@@ -16,11 +16,10 @@
   <meta name="pagetype" content="2" />
 
   <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.k9l2pr8xprp.css">
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.021njyl5crip.css">
 
   <!-- 附属css文件 -->
   <link rel="stylesheet" href="https://cunchu.site/people/qiangdan/main.css" charset="utf-8">
-  <link rel="stylesheet" href="./static/resource/smartphoto.css" charset="utf-8">
 
 </head>
 
@@ -52,6 +51,11 @@
           <a class="menu-item" href="#">正在进行</a>
           <a class="menu-item" href="#">已完成竞单</a>
           <a class="menu-item" href="#">竞单失败</a>
+          <a class="menu-item" href="#">历史订单</a>
+          <a class="menu-item" href="#">尚未确认 <span class="num">5</span>
+          </a>
+          <a class="menu-item" href="#">尚未评价 <span class="num">5</span>
+          </a>
           <div class="menu-title">
             <div class="icon"></div>
             <span>创建需求</span>
@@ -88,155 +92,52 @@
         </div>
       </div>
       <div class="right-box fl">
-        <div class="xiangqing clear" template="xiangqing">
+        <div class="pingjia" template="pingjia">
           <div class="card-box clear">
-            <div class="title" font="FZLTCHJW">申请人信息</div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">申请人:</span>
+            <div class="title" font="FZLTCHJW">项目评价</div>
+            <div class="pingjia-box">
+              <div class="pingjia-bar shixiao clear">
+                <div class="left">完成时效：</div>
+                <div class="right clear">
+                  <div class="icon" o-tap="setshixiao(1)"></div>
+                  <div class="icon" o-tap="setshixiao(2)"></div>
+                  <div class="icon" o-tap="setshixiao(3)"></div>
+                  <div class="icon" o-tap="setshixiao(4)"></div>
+                  <div class="icon" o-tap="setshixiao(5)"></div>
+                </div>
               </div>
-              <input type="text" disabled="disabled" value="雷军">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">申请部门:</span>
+              <div class="pingjia-bar zhiliang clear">
+                <div class="left">作品质量：</div>
+                <div class="right clear">
+                  <div class="icon" o-tap="setzhiliang(1)"></div>
+                  <div class="icon" o-tap="setzhiliang(2)"></div>
+                  <div class="icon" o-tap="setzhiliang(3)"></div>
+                  <div class="icon" o-tap="setzhiliang(4)"></div>
+                  <div class="icon" o-tap="setzhiliang(5)"></div>
+                </div>
               </div>
-              <input type="text" disabled="disabled" value="商务部">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">联系方式:</span>
+              <div class="pingjia-bar chuangxin clear">
+                <div class="left">技术创新：</div>
+                <div class="right clear">
+                  <div class="icon" o-tap="setchuangxin(1)"></div>
+                  <div class="icon" o-tap="setchuangxin(2)"></div>
+                  <div class="icon" o-tap="setchuangxin(3)"></div>
+                  <div class="icon" o-tap="setchuangxin(4)"></div>
+                  <div class="icon" o-tap="setchuangxin(5)"></div>
+                </div>
               </div>
-              <input type="text" disabled="disabled" value="13111111111">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">申请时间:</span>
+              <div class="pingjia-input-bar clear">
+                <div class="left">浏览地址：</div>
+                <div class="right clear">
+                  <input type="text" placeholder="项目上线地址">
+                </div>
               </div>
-              <input type="text" disabled="disabled" value="2020-07-20 10:12:29">
-            </div>
-          </div>
-          <div class="card-box clear">
-            <div class="title" font="FZLTCHJW">需求信息</div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">需求名称:</span>
+              <div class="text">留言评价：</div>
+              <textarea id="description" placeholder="对制作组的作品进行评价（匿名）"></textarea>
+              <div class="submit-box clear">
+                <input id="submit" type="button" value="提交" o-hover="shadow">
+                <input id="clear" type="button" value="重置" o-hover="shadow">
               </div>
-              <input type="text" disabled="disabled" value="全国党员读书平台设计需求">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">上线日期:</span>
-              </div>
-              <input type="text" disabled="disabled" value="2020-07-31">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">需求类型:</span>
-              </div>
-              <input type="text" disabled="disabled" value="演播厅活动">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">完成日期:</span>
-              </div>
-              <input type="text" disabled="disabled" value="2020-07-31">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">选择场次:</span>
-              </div>
-              <input type="text" disabled="disabled" value="场次1">
-            </div>
-          </div>
-          <div class="card-box clear">
-            <div class="title" font="FZLTCHJW">详细需求</div>
-            <div class="item-box">
-              <span>页面+模板+测试</span>
-              <span>小程序</span>
-            </div>
-          </div>
-          <div class="card-box clear">
-            <div class="title" font="FZLTCHJW">需求描述</div>
-            <textarea id="description" placeholder="详细需求描述">7月24日下午两点在30层会议室召开总书记报道经验交流会，需要内网直播，摄像，导播，指定全媒体制作一部承接。</textarea>
-            <div class="show-file">
-              <a href="#">
-                <div class="icon"></div>
-                <span>附件-内网直播说明文件.zip</span>
-              </a>
-            </div>
-          </div>
-          <div class="card-box clear">
-            <div class="title" font="FZLTCHJW">竞标人信息</div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">竞标人:</span>
-              </div>
-              <input type="text" disabled="disabled" value="雷军">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">竞标部门:</span>
-              </div>
-              <input type="text" disabled="disabled" value="商务部">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">申请时间:</span>
-              </div>
-              <input type="text" disabled="disabled" value="2020-07-20 10:12:29">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">完成时间:</span>
-              </div>
-              <input type="text" disabled="disabled" value="2020-07-20 10:12:29">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">竞标分值 :</span>
-              </div>
-              <input type="text" disabled="disabled" value="8">
-            </div>
-            <div class="input-bar">
-              <div class="left">
-                <div class="icon"></div>
-                <span font="DFQianLongXing">联系方式:</span>
-              </div>
-              <input type="text" disabled="disabled" value="13111111111">
-            </div>
-          </div>
-          <div class="card-box clear">
-            <div class="title" font="FZLTCHJW">竞标留言</div>
-            <textarea id="description" placeholder="竞标留言内容">3个页面，5张海报 总计50分</textarea>
-            <div class="h20"></div>
-            <div class="title" font="FZLTCHJW">附件</div>
-            <div class="preview-box">
-              <div class="image-box">
-                <a class="smartphoto" href="./static/resource/MAIN202008030915155328251151520.jpg">
-                  <img src="./static/resource/MAIN202008030915155328251151520.jpg">
-                </a>
-              </div>
-            </div>
-            <div class="show-file">
-              <a href="#">
-                <div class="icon"></div>
-                <span>附件-内网直播说明文件.zip</span>
-              </a>
             </div>
           </div>
         </div>
@@ -244,19 +145,72 @@
     </div>
   </div>
 
+
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/jquery-1.7.1.min.js" type="text/javascript" charset="UTF-8"></script>
-  <script src="./static/js/smartphoto.js" type="text/javascript" charset="UTF-8"></script>
   <!-- 框架script文件 -->
-  <script src="./static/js/owo.core.k9l2pr8xprp.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/owo.core.021njyl5crip.js" type="text/javascript" charset="UTF-8"></script>
   <script type="text/javascript" charset="UTF-8">
     owo.script = {
       "page": {
         "template": {
-          "xiangqing": {
-            "created": function created() {
-              setTimeout(function() {
-                new SmartPhoto(".smartphoto");
-              }, 0);
+          "pingjia": {
+            "setshixiao": function setshixiao(ind) {
+              var starsList = this.queryAll('.shixiao .icon');
+
+              var _loop = function _loop(index) {
+                var element = starsList[index];
+
+                if (index < ind) {
+                  setTimeout(function() {
+                    element.classList.add('active');
+                  }, index * 60);
+                } else {
+                  element.classList.remove('active');
+                }
+              };
+
+              for (var index = 0; index < starsList.length; index++) {
+                _loop(index);
+              }
+            },
+            "setzhiliang": function setzhiliang(ind) {
+              var starsList = this.queryAll('.zhiliang .icon');
+
+              var _loop2 = function _loop2(index) {
+                var element = starsList[index];
+
+                if (index < ind) {
+                  setTimeout(function() {
+                    element.classList.add('active');
+                  }, index * 60);
+                } else {
+                  element.classList.remove('active');
+                }
+              };
+
+              for (var index = 0; index < starsList.length; index++) {
+                _loop2(index);
+              }
+            },
+            "setchuangxin": function setchuangxin(ind) {
+              var starsList = this.queryAll('.chuangxin .icon');
+
+              var _loop3 = function _loop3(index) {
+                var element = starsList[index];
+
+                if (index < ind) {
+                  setTimeout(function() {
+                    element.classList.add('active');
+                  }, index * 60);
+                } else {
+                  element.classList.remove('active');
+                }
+              };
+
+              for (var index = 0; index < starsList.length; index++) {
+                _loop3(index);
+              }
             }
           }
         }
