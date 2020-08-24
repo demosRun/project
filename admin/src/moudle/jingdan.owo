@@ -1,6 +1,13 @@
 <template lang="pug">
 .box
   plug(_name="searchBar" _src="./src/moudle/searchBar.owo")
+  //- 只有数值情况
+  .peie-bar 已赚配额: <b>5214.00</b>
+
+  //- 使用量情况
+  .peie-use
+    p 已用配额: <b><span class="use">80</span>/<span class="all">320</span></b>
+    .use-bar
   table(border="0" rules="none")
     tbody
       tr
@@ -106,6 +113,14 @@
 <script>
   module.exports = {
     created: function () {
+      this.queryAll('.peie-use').forEach(element => {
+        let all = element.query('.all').innerText
+        let use = element.query('.use').innerText
+        setTimeout(() => {
+          element.query('.use-bar').style.width = `${parseInt(use) / parseInt(all) * 100}%`
+        }, 100);
+        
+      });
     }
   }
 </script>
@@ -126,5 +141,31 @@ a {
 }
 a:hover {
   color: #F44336;
+}
+.peie-bar, .peie-use {
+  line-height: 30px;
+  background-color: linen;
+  padding: 0 10px;
+  color: #333;
+  height: 30px;
+  position: relative;
+  p {
+    position: absolute;
+    display: block;
+    height: 30px;
+    z-index: 9;
+    left: 10px;
+  }
+  .use-bar {
+    height: 100%;
+    position: absolute;
+    background-color: #ffee8b;
+    width: 0%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: 0 5px 5px 0;
+    transition: width 2s;
+  }
 }
 </style>
