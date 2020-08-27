@@ -98,7 +98,15 @@
   .card-box.clear
     .title(font="FZLTCHJW.TTF") 竞标留言
     textarea(id="description" placeholder="竞标留言内容") 3个页面，5张海报 总计50分
+    .h20
+    .title(font="FZLTCHJW.TTF") 附件
     //- 查看附件
+    //- 图片附件使用这个
+    .preview-box
+      .image-box
+        a.smartphoto(href="http://www.people.com.cn/NMediaFile/2020/0803/MAIN202008030915155328251151520.jpg")
+          img(src="http://www.people.com.cn/NMediaFile/2020/0803/MAIN202008030915155328251151520.jpg")
+    //- 文件附件使用这个
     .show-file
       a(href="#")
         .icon &#xe696;
@@ -108,6 +116,9 @@
 <script>
   module.exports = {
     created: function () {
+      setTimeout(function() {
+        new SmartPhoto(".smartphoto");
+      }, 0)
     }
   }
 </script>
@@ -154,6 +165,27 @@
   }
   span {
     color: #627fb3;
+  }
+}
+.image-box {
+  position: relative;
+  width: 120px;
+  height: 70px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 10px 0;
+  a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  img {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
   }
 }
 </style>

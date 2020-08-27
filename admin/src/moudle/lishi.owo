@@ -1,21 +1,15 @@
 <template lang="pug">
-.box
+.box.lishi
   plug(_name="searchBar" _src="./src/moudle/searchBar.owo")
-  //- 只有数值情况
-  .peie-bar 已赚配额: <b>5214.00</b>
-
-  //- 使用量情况
-  .peie-use
-    p 已用配额: <b><span class="use">80</span>/<span class="all">320</span></b>
-    .use-bar
   table(border="0" rules="none")
     tbody
       tr
         th 序号
         th 需求名称
         th 开始时间
-        th 需求类别
-        th 状态
+        th 项目类别
+        th 提交人
+        th 项目分值
         th 操作
       tr
         td 226
@@ -23,104 +17,156 @@
           a(href='order.php?id=226') 2020夏汛早报
         td 2020-07-09
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=226') 竞单
+          a(href='bid.php?id=226') 查看详情
       tr
         td 225
         td
           a(href='order.php?id=225') 2020京津冀联防日报
         td 2020-07-09
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=225') 竞单
+          a(href='bid.php?id=225') 查看详情
       tr
         td 224
         td
           a(href='order.php?id=224') 中科院院士访谈
         td 2020-07-09
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=224') 竞单
+          a(href='bid.php?id=224') 查看详情
       tr
         td 218
         td
           a(href='order.php?id=218') 抓党建促脱贫攻坚图解
         td 2020-07-08
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=218') 竞单
+          a(href='bid.php?id=218') 查看详情
       tr
         td 210
         td
           a(href='order.php?id=210') 摄影服务
         td 2020-07-08
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=210') 竞单
+          a(href='bid.php?id=210') 查看详情
       tr
         td 206
         td
           a(href='order.php?id=206') 不忘初心为党颂歌海报
         td 2020-07-08
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=206') 竞单
+          a(href='bid.php?id=206') 查看详情
       tr
         td 205
         td
           a(href='order.php?id=205') 四川频道申请制作“微创业扶植计划”专题
         td 2020-07-07
         td 临时
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=205') 竞单
+          a(href='bid.php?id=205') 查看详情
       tr
         td 201
         td
           a(href='order.php?id=201') 方江山副总编辑参观
         td 2020-07-07
         td 临时
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=201') 竞单
+          a(href='bid.php?id=201') 查看详情
       tr
         td 199
         td
           a(href='order.php?id=199') PPT制作
         td 2020-07-07
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=199') 竞单
+          a(href='bid.php?id=199') 查看详情
       tr
         td 195
         td
           a(href='order.php?id=195') 应急管理部系列访谈录播
         td 2020-07-06
         td 日常
-        td 等待接单
+        td 李磊
+        td 8
         td
-          a(href='bid.php?id=195') 竞单
+          a(href='bid.php?id=195') 查看详情
+      tr
+        td 206
+        td
+          a(href='order.php?id=206') 不忘初心为党颂歌海报
+        td 2020-07-08
+        td 日常
+        td 李磊
+        td 8
+        td
+          a(href='bid.php?id=206') 查看详情
+      tr
+        td 205
+        td
+          a(href='order.php?id=205') 四川频道申请制作“微创业扶植计划”专题
+        td 2020-07-07
+        td 临时
+        td 李磊
+        td 8
+        td
+          a(href='bid.php?id=205') 查看详情
+      tr
+        td 201
+        td
+          a(href='order.php?id=201') 方江山副总编辑参观
+        td 2020-07-07
+        td 临时
+        td 李磊
+        td 8
+        td
+          a(href='bid.php?id=201') 查看详情
+      tr
+        td 199
+        td
+          a(href='order.php?id=199') PPT制作
+        td 2020-07-07
+        td 日常
+        td 李磊
+        td 8
+        td
+          a(href='bid.php?id=199') 查看详情
+      tr
+        td 195
+        td
+          a(href='order.php?id=195') 应急管理部系列访谈录播
+        td 2020-07-06
+        td 日常
+        td 李磊
+        td 8
+        td
+          a(href='bid.php?id=195') 查看详情
   plug(_name="pageBar" _src="./src/moudle/pageBar.owo")
 </template>
 
 <script>
   module.exports = {
     created: function () {
-      this.queryAll('.peie-use').forEach(element => {
-        let all = element.query('.all').innerText
-        let use = element.query('.use').innerText
-        setTimeout(() => {
-          element.query('.use-bar').style.width = `${parseInt(use) / parseInt(all) * 100}%`
-        }, 100);
-        
-      });
     }
   }
 </script>
@@ -141,31 +187,5 @@ a {
 }
 a:hover {
   color: #F44336;
-}
-.peie-bar, .peie-use {
-  line-height: 30px;
-  background-color: linen;
-  padding: 0 10px;
-  color: #333;
-  height: 30px;
-  position: relative;
-  p {
-    position: absolute;
-    display: block;
-    height: 30px;
-    z-index: 9;
-    left: 10px;
-  }
-  .use-bar {
-    height: 100%;
-    position: absolute;
-    background-color: #ffee8b;
-    width: 0%;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    border-radius: 0 5px 5px 0;
-    transition: width 2s;
-  }
 }
 </style>

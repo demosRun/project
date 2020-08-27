@@ -20,7 +20,10 @@
         a.menu-item(href="#") 正在进行
         a.menu-item(href="#") 已完成竞单
         a.menu-item(href="#") 竞单失败
-
+        //- 编辑部门才有的
+        a.menu-item(href="#") 历史订单
+        a.menu-item(href="#") 尚未确认 <span class="num">5</span>
+        a.menu-item(href="#") 尚未评价 <span class="num">5</span>
         .menu-title
           .icon &#xe611;
           span 创建需求
@@ -51,7 +54,7 @@
           span 相关文档
         a.menu-item(href="#") 设计制作刊例价
         a.menu-item(href="#") 视频支持刊例价
-    .right.fl
+    .right-box.fl
       //- 内容显示区域
 
       //- 设计刊例价
@@ -59,11 +62,13 @@
       //- 视频刊例价
       //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
       //- 竞单列表
-      //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+      plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+      //- 历史项目
+      //- plug(_name="lishi" _src="./src/moudle/lishi.owo")
       //- 新建需求
       //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
       //- 评价
-      plug(_name="pingjia" _src="./src/page/pingjia.owo")
+      //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
       //- 调整
       //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
       //- 需求详情
@@ -101,7 +106,7 @@
     padding-left: 15px;
   }
 }
-.right {
+.right-box {
   height: 100%;
   overflow: auto;
   width: calc(100% - 260px);

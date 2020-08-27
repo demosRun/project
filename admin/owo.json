@@ -61,6 +61,10 @@
 		{
 			"name": "jquery.datetimepicker",
 			"src": "./src/resource/jquery.datetimepicker.js"
+		},
+		{
+			"name": "smartphoto",
+			"src": "https://cunchu.site/ozzx/script/smartphoto.js"
 		}
 	],
 	"styleList": [
@@ -72,6 +76,10 @@
 		{
 			"name": "datetimepicker",
 			"src": "./src/resource/datetimepicker.css"
+		},
+		{
+			"name": "smartphoto",
+			"src": "https://cunchu.site/ozzx/style/smartphoto.css"
 		}
 	],
 	"pageList": [

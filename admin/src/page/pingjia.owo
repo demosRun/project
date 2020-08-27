@@ -27,12 +27,12 @@
           .icon(o-tap="setchuangxin(3)") &#xe632;
           .icon(o-tap="setchuangxin(4)") &#xe632;
           .icon(o-tap="setchuangxin(5)") &#xe632;
-      .input-bar.clear
+      .pingjia-input-bar.clear
         .left 浏览地址：
         .right.clear
-          input(type="text" placeholder="完整地址(匿名)")
+          input(type="text" placeholder="项目上线地址")
       .text 留言评价：
-      textarea(id="description" placeholder="详细需求描述")
+      textarea(id="description" placeholder="对制作组的作品进行评价（匿名）")
       .submit-box.clear
         input#submit(type="button" value="提交" o-hover="shadow")
         input#clear(type="button" value="重置" o-hover="shadow")
@@ -115,14 +115,16 @@
     }
   }
 }
-.input-bar {
+.pingjia-input-bar {
   line-height: 40px;
   font-size: 16px;
   display: flex;
   justify-content: space-between;
+  width: 810px;
   input {
-    border: 2px solid #e0e0e0;
-    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
     height: 30px;
     box-sizing: border-box;
     padding: 0 5px;
@@ -135,13 +137,16 @@
   font-size: 16px;
 }
 textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
+  width: calc(100% - 10px);
+  margin: 0 auto;
   display: block;
-  height: 120px;
+  height: 140px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
   outline: none;
-  border-radius: 5px;
-  border-color: #e0e0e0;
 }
 textarea:focus {
   border-color: darkkhaki;
