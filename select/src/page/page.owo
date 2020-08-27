@@ -7,10 +7,6 @@
   .select-card-box.clear
     .card-item.fl(o-hover="float")
       .icon &#xe7f1;
-      h2 自主创新
-      p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
-    .card-item.fl(o-hover="float")
-      .icon &#xe7f1;
       h2 日常需求
       p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
     .card-item.fl(o-hover="float")
@@ -41,7 +37,7 @@
   background-color: #eee5e6;
 }
 .select-card-box {
-  width: 1200px;
+  width: 900px;
   height: 370px;
   position: absolute;
   left: 0;
