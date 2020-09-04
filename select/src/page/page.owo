@@ -17,6 +17,10 @@
       .icon &#xe723;
       h2 重大项目
       p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
+    .card-item.fl(o-hover="float")
+      .icon &#xe669;
+      h2 项目管理
+      p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
 </template>
 
 <script>
@@ -37,7 +41,7 @@
   background-color: #eee5e6;
 }
 .select-card-box {
-  width: 900px;
+  width: 1200px;
   height: 370px;
   position: absolute;
   left: 0;

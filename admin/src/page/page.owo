@@ -62,7 +62,7 @@
       //- 视频刊例价
       //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
       //- 竞单列表
-      plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+      //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
       //- 历史项目
       //- plug(_name="lishi" _src="./src/moudle/lishi.owo")
       //- 新建需求
@@ -72,7 +72,7 @@
       //- 调整
       //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
       //- 需求详情
-      //- plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
+      plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
 </template>
 
 <script>

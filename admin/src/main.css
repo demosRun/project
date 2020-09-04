@@ -476,3 +476,42 @@ input[type="number"]{
 .box {
   height: calc(100% - 31px);
 }
+
+.buzhou-box {
+  display: flex;
+  margin-top: 15px;
+}
+
+.buzhou-item {
+  height: 30px;
+  border: 1px solid #ccc;
+  display: block;
+  width: auto;
+  line-height: 30px;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #333;
+}
+
+.buzhou-box .icon {
+  line-height: 32px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #ccc;
+}
+
+.buzhou-box .buzhou-item.active {
+  background-color: #009fe9;
+  color: white;
+  border-color: #009fe9;
+}
+
+.buzhou-box .icon.active {
+  color: #009fe9;
+}
+
+.buzhou-box .after {
+  background-color: silver;
+  border-color: silver;
+  color: white;
+}

@@ -16,11 +16,12 @@
   <meta name="pagetype" content="2" />
 
   <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.3nqdpuy0zs6.css">
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.3kv7xtgzjj8.css">
 
   <!-- 附属css文件 -->
-  <link rel="stylesheet" href="https://cunchu.site/people/qiangdan/main.css" charset="utf-8">
+  <link rel="stylesheet" href="./static/resource/main.css" charset="utf-8">
   <link rel="stylesheet" href="./static/css/datetimepicker.css" charset="utf-8">
+  <link rel="stylesheet" href="./static/resource/smartphoto.css" charset="utf-8">
 
 </head>
 
@@ -93,192 +94,191 @@
         </div>
       </div>
       <div class="right-box fl">
-        <div class="box" template="jingdan">
-          <div class="search-bar clear" template="searchBar">
-            <div class="text-input search-bar-item fl">
-              <input type="text" placeholder="请输入需求名称">
+        <div class="xiangqing clear" template="xiangqing">
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">当前步骤</div>
+            <div class="buzhou-box">
+              <div class="buzhou-item after">需求部门发起制作需求</div>
+              <div class="icon active"></div>
+              <div class="buzhou-item after">制作部门竞单</div>
+              <div class="icon active"></div>
+              <div class="buzhou-item active">需求部门确认</div>
+              <div class="icon active"></div>
+              <div class="buzhou-item">全媒体制作部制作</div>
+              <div class="icon"></div>
+              <div class="buzhou-item">需求部门确认完成</div>
+              <div class="icon"></div>
+              <div class="buzhou-item">需求部门评价</div>
             </div>
-            <div class="date-input search-bar-item fl">
-              <input type="text" placeholder="开始时间" readonly="true">
-            </div>
-            <div class="icon fl"></div>
-            <div class="date-input search-bar-item fl">
-              <input type="text" placeholder="结束时间" readonly="true">
-            </div>
-            <div class="text-input search-bar-item fl">
-              <input type="text" placeholder="需求部门">
-            </div>
-            <div class="select-input search-bar-item fl">
-              <select id="type">
-                <option value="-">请选择需求类别</option>
-                <option value="日常">日常</option>
-                <option value="访谈">访谈</option>
-                <option value="演播厅">演播厅</option>
-                <option value="临时">临时</option>
-                <option value="重大">重大</option>
-                <option value="创新">创新</option>
-                <option value="调整">调整</option>
-              </select>
-            </div>
-            <input id="search" type="button" value="搜索">
-            <input id="clear" type="button" value="重置">
           </div>
-          <div class="peie-bar">已赚配额: <b>5214.00</b></div>
-          <div class="peie-use">
-            <p>已用配额: <b>
-                <span class="use">80</span>/<span class="all">320</span>
-              </b></p>
-            <div class="use-bar"></div>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">当前步骤</div>
+            <div class="buzhou-box">
+              <div class="buzhou-item after">需求部门发起制作需求</div>
+              <div class="icon active"></div>
+              <div class="buzhou-item after">管理员审核</div>
+              <div class="icon active"></div>
+              <div class="buzhou-item active">制作部门竞单</div>
+              <div class="icon active"></div>
+              <div class="buzhou-item">需求部门确认</div>
+              <div class="icon"></div>
+              <div class="buzhou-item">全媒体制作部制作</div>
+              <div class="icon"></div>
+              <div class="buzhou-item">需求部门确认完成</div>
+              <div class="icon"></div>
+              <div class="buzhou-item">需求部门评价</div>
+              <div class="icon"></div>
+              <div class="buzhou-item">管理员终审</div>
+            </div>
           </div>
-          <table border="0" rules="none">
-            <tbody>
-              <tr>
-                <th>序号</th>
-                <th>需求名称</th>
-                <th>开始时间</th>
-                <th>需求类别</th>
-                <th>状态</th>
-                <th>操作</th>
-              </tr>
-              <tr>
-                <td>226</td>
-                <td>
-                  <a href="order.php?id=226">2020夏汛早报</a>
-                </td>
-                <td>2020-07-09</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=226">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>225</td>
-                <td>
-                  <a href="order.php?id=225">2020京津冀联防日报</a>
-                </td>
-                <td>2020-07-09</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=225">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>224</td>
-                <td>
-                  <a href="order.php?id=224">中科院院士访谈</a>
-                </td>
-                <td>2020-07-09</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=224">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>218</td>
-                <td>
-                  <a href="order.php?id=218">抓党建促脱贫攻坚图解</a>
-                </td>
-                <td>2020-07-08</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=218">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>210</td>
-                <td>
-                  <a href="order.php?id=210">摄影服务</a>
-                </td>
-                <td>2020-07-08</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=210">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>206</td>
-                <td>
-                  <a href="order.php?id=206">不忘初心为党颂歌海报</a>
-                </td>
-                <td>2020-07-08</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=206">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>205</td>
-                <td>
-                  <a href="order.php?id=205">四川频道申请制作“微创业扶植计划”专题</a>
-                </td>
-                <td>2020-07-07</td>
-                <td>临时</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=205">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>201</td>
-                <td>
-                  <a href="order.php?id=201">方江山副总编辑参观</a>
-                </td>
-                <td>2020-07-07</td>
-                <td>临时</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=201">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>199</td>
-                <td>
-                  <a href="order.php?id=199">PPT制作</a>
-                </td>
-                <td>2020-07-07</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=199">竞单</a>
-                </td>
-              </tr>
-              <tr>
-                <td>195</td>
-                <td>
-                  <a href="order.php?id=195">应急管理部系列访谈录播</a>
-                </td>
-                <td>2020-07-06</td>
-                <td>日常</td>
-                <td>等待接单</td>
-                <td>
-                  <a href="bid.php?id=195">竞单</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="page-bar-box clear">
-            <div class="page-bar clear fr">
-              <div class="item">
-                <a href="#">首页</a>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">申请人信息</div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">申请人:</span>
               </div>
-              <div class="item">
-                <a href="#">上一页</a>
+              <input type="text" disabled="disabled" value="雷军">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">申请部门:</span>
               </div>
-              <div class="item page-show">
-                <input class="number-input" type="number" value="1">
-                <span class="deparator">/</span>
-                <span>5</span>
+              <input type="text" disabled="disabled" value="商务部">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">联系方式:</span>
               </div>
-              <input class="item go-button" type="button" value="跳转" title="跳转至输入的页数">
-              <div class="item">
-                <a href="#">下一页</a>
+              <input type="text" disabled="disabled" value="13111111111">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">申请时间:</span>
               </div>
+              <input type="text" disabled="disabled" value="2020-07-20 10:12:29">
+            </div>
+          </div>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">需求信息</div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">需求名称:</span>
+              </div>
+              <input type="text" disabled="disabled" value="全国党员读书平台设计需求">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">上线日期:</span>
+              </div>
+              <input type="text" disabled="disabled" value="2020-07-31">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">需求类型:</span>
+              </div>
+              <input type="text" disabled="disabled" value="演播厅活动">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">完成日期:</span>
+              </div>
+              <input type="text" disabled="disabled" value="2020-07-31">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">选择场次:</span>
+              </div>
+              <input type="text" disabled="disabled" value="场次1">
+            </div>
+          </div>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">详细需求</div>
+            <div class="item-box">
+              <span>页面+模板+测试</span>
+              <span>小程序</span>
+            </div>
+          </div>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">需求描述</div>
+            <textarea id="description" placeholder="详细需求描述">7月24日下午两点在30层会议室召开总书记报道经验交流会，需要内网直播，摄像，导播，指定全媒体制作一部承接。</textarea>
+            <div class="show-file">
+              <a href="#">
+                <div class="icon"></div>
+                <span>附件-内网直播说明文件.zip</span>
+              </a>
+            </div>
+          </div>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">竞标人信息</div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">竞标人:</span>
+              </div>
+              <input type="text" disabled="disabled" value="雷军">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">竞标部门:</span>
+              </div>
+              <input type="text" disabled="disabled" value="商务部">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">申请时间:</span>
+              </div>
+              <input type="text" disabled="disabled" value="2020-07-20 10:12:29">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">完成时间:</span>
+              </div>
+              <input type="text" disabled="disabled" value="2020-07-20 10:12:29">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">竞标分值 :</span>
+              </div>
+              <input type="text" disabled="disabled" value="8">
+            </div>
+            <div class="input-bar">
+              <div class="left">
+                <div class="icon"></div>
+                <span font="DFQianLongXing">联系方式:</span>
+              </div>
+              <input type="text" disabled="disabled" value="13111111111">
+            </div>
+          </div>
+          <div class="card-box clear">
+            <div class="title" font="FZLTCHJW">竞标留言</div>
+            <textarea id="description" placeholder="竞标留言内容">3个页面，5张海报 总计50分</textarea>
+            <div class="h20"></div>
+            <div class="title" font="FZLTCHJW">附件</div>
+            <div class="preview-box">
+              <div class="image-box">
+                <a class="smartphoto" href="./static/resource/MAIN202008030915155328251151520.jpg">
+                  <img src="./static/resource/MAIN202008030915155328251151520.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="show-file">
+              <a href="#">
+                <div class="icon"></div>
+                <span>附件-内网直播说明文件.zip</span>
+              </a>
             </div>
           </div>
         </div>
@@ -287,10 +287,12 @@
   </div>
 
 
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/jquery-1.7.1.min.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/jquery.datetimepicker.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/smartphoto.js" type="text/javascript" charset="UTF-8"></script>
   <!-- 框架script文件 -->
-  <script src="./static/js/owo.core.3nqdpuy0zs6.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/owo.core.3kv7xtgzjj8.js" type="text/javascript" charset="UTF-8"></script>
   <script type="text/javascript" charset="UTF-8">
     owo.script = {
       "page": {
@@ -298,26 +300,11 @@
           console.log('sdsd');
         },
         "template": {
-          "jingdan": {
+          "xiangqing": {
             "created": function created() {
-              this.queryAll('.peie-use').forEach(function(element) {
-                var all = element.query('.all').innerText;
-                var use = element.query('.use').innerText;
-                setTimeout(function() {
-                  element.query('.use-bar').style.width = parseInt(use) / parseInt(all) * 100 + "%";
-                }, 100);
-              });
-            },
-            "template": {
-              "searchBar": {
-                "created": function created() {
-                  $.datetimepicker.setLocale('ch');
-                  $('.date-input input').datetimepicker({
-                    timepicker: false,
-                    format: 'Y-m-d'
-                  });
-                }
-              }
+              setTimeout(function() {
+                new SmartPhoto(".smartphoto");
+              }, 0);
             }
           }
         }

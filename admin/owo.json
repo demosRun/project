@@ -70,7 +70,7 @@
 	"styleList": [
 		{
 			"name": "main",
-			"src": "./src/main.css",
+			"src": "http://cunchu.site/people/qiangdan/main.css",
 			"resource": true
 		},
 		{

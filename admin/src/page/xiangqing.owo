@@ -1,6 +1,38 @@
 <template lang="pug">
 .xiangqing.clear
   .card-box.clear
+    .title(font="FZLTCHJW.TTF") 当前步骤
+    .buzhou-box
+      .buzhou-item.after 需求部门发起制作需求
+      .icon.active &#xe604;
+      .buzhou-item.after 制作部门竞单
+      .icon.active &#xe7b2;
+      .buzhou-item.active 需求部门确认
+      .icon.active &#xe604;
+      .buzhou-item 全媒体制作部制作
+      .icon &#xe604;
+      .buzhou-item 需求部门确认完成
+      .icon &#xe604;
+      .buzhou-item 需求部门评价
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 当前步骤
+    .buzhou-box
+      .buzhou-item.after 需求部门发起制作需求
+      .icon.active &#xe7b2;
+      .buzhou-item.after 管理员审核
+      .icon.active &#xe604;
+      .buzhou-item.active 制作部门竞单
+      .icon.active &#xe7b2;
+      .buzhou-item 需求部门确认
+      .icon &#xe604;
+      .buzhou-item 全媒体制作部制作
+      .icon &#xe604;
+      .buzhou-item 需求部门确认完成
+      .icon &#xe604;
+      .buzhou-item 需求部门评价
+      .icon &#xe604;
+      .buzhou-item 管理员终审
+  .card-box.clear
     .title(font="FZLTCHJW.TTF") 申请人信息
     .input-bar
       .left
