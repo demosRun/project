@@ -13,7 +13,7 @@
       .icon &#xe64b;
       h2 临时需求
       p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
-    .card-item.fl(o-hover="float")
+    .card-item.disable.fl(o-hover="float")
       .icon &#xe723;
       h2 重大项目
       p 文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述
@@ -121,5 +121,17 @@
   margin: auto;
   // opacity: 0;
   transition: opacity 0.3s;
+}
+.card-item.disable {
+  user-select: none;
+  pointer-events: none;
+  background-color: #f5e8e8;
+}
+
+.card-item.disable::after {
+  content: url('@|qd.png|');
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 </style>
