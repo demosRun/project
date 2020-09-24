@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   user-select: none;
 }
 
-/* 移除button点击时的黑边 */
+/* 绉婚櫎button鐐瑰嚮鏃剁殑榛戣竟 */
 input[type=submit],
 input[type=reset],
 input[type=button]{
@@ -114,24 +114,24 @@ input[type=button]{
 }
 
 
-::-webkit-scrollbar {/*滚动条整体样式*/
-  width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {/*婊氬姩鏉℃暣浣撴牱寮�*/
+  width: 4px;     /*楂樺鍒嗗埆瀵瑰簲妯珫婊氬姩鏉＄殑灏哄*/
   height: 4px;
   scrollbar-arrow-color:red;
 }
-::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+::-webkit-scrollbar-thumb {/*婊氬姩鏉￠噷闈㈠皬鏂瑰潡*/
   border-radius: 5px;
   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
   background: rgba(128, 105, 185, 0.6);
   scrollbar-arrow-color:red;
 }
-::-webkit-scrollbar-track {/*滚动条里面轨道*/
+::-webkit-scrollbar-track {/*婊氬姩鏉￠噷闈㈣建閬�*/
   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
   border-radius: 0;
   background: rgba(255, 253, 175, 0.5);
 }
 
-/* 表格样式 */
+/* 琛ㄦ牸鏍峰紡 */
 .box table {
   width: 100%;
   border: 1px solid #d1d9dc;
@@ -139,8 +139,10 @@ input[type=button]{
 .box th, td, tr {
   border: none;
   line-height: 30px;
-
+  border-right: 1px solid #d1d9dc;
+  text-align: center;
   border-bottom: 1px solid #d1d9dc;
+  padding: 0 10px;
 }
 .box th {
   background-color: #d7edc7;
@@ -514,4 +516,152 @@ input[type="number"]{
   background-color: silver;
   border-color: silver;
   color: white;
+}
+.card-item.disable {
+  user-select: none;
+  pointer-events: none;
+  background-color: #f5e8e8;
+}
+
+.klj-show {
+  position: fixed;
+  right: 2px;
+  top: 100px;
+  opacity: 0.8;
+  transition: all 0.5s;
+  width: 26px;
+  border-radius: 10px 0 0 10px;
+  background-color: white;
+  padding: 6px 4px;
+  box-shadow: 0px 0px 3px #a09696;
+}
+
+.klj-show .menu {
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Microsoft YaHei";
+}
+
+.klj-show table {
+  display: none;
+  height: calc(100% - 31px);
+  overflow: auto;
+}
+
+.klj-show:hover {
+  opacity: 1;
+  width: 700px;
+  height: 600px;
+}
+
+.klj-show:hover table {
+  display: block;
+}
+
+.klj-show:hover .menu {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.klj-show:hover .menu .icon {
+  width: 30px;
+}
+
+.klj-show .menu .icon {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: #4ec763;
+}
+
+.klj-show .menu .enlarge {
+  display: none;
+  position: absolute;
+  right: 8px;
+  color: #666;
+  padding: 0 5px;
+  top: 6px;
+  line-height: 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  align-items: center;
+}
+.klj-show .menu .enlarge .icon{
+  padding-right: 0px;
+  font-size: 18px;
+}
+.klj-show:hover .menu .enlarge, .klj-show.expand .menu .enlarge {
+  display: flex;
+}
+.klj-show.expand {
+  width: calc(100% - 263px) !important;
+  border-radius: 0;
+  padding: 0;
+  top: 52px;
+  box-shadow: none;
+  opacity: 1;
+  height: calc(100% - 52px) !important;
+}
+
+.klj-show.expand table {
+  display:  block;
+}
+
+.klj-show.expand .menu {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.klj-show table, .klj-show tbody{
+  width: 100%;
+}
+
+.klj-show.expand .icon {
+  width: 30px;
+}
+
+.klj-show.expand .menu .enlarge {
+  top: 0;
+}
+
+.switch-button {
+  display: none;
+  margin-left: 5px;
+}
+
+.klj-show:hover .text {
+  display: none;
+}
+
+.klj-show:hover .switch-button {
+  display: block;
+}
+
+.klj-show:hover .switch-button span {
+  margin: 0 5px;
+  font-size: 15px;
+  color: #999999;
+}
+
+.klj-show:hover .switch-button span.active {
+  color: #8383cc;
+}
+
+
+.klj-show:hover .switch-button span {
+  margin: 0 3px;
+}
+.klj-show .table-box {
+  display: none;
+  height: 100%;
+  overflow: auto;
+}
+
+.klj-show:hover .table-box {
+  display: block;
 }

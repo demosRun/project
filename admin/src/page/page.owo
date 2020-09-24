@@ -73,6 +73,564 @@
       //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
       //- 需求详情
       plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
+      .klj-show
+        .menu
+          .icon &#xe7f1;
+          .text 刊例价参考
+          .switch-button
+            span.active(onclick="changeAcitveTable(0)") 设计制作
+            span(onclick="changeAcitveTable(1)") 视频拍摄
+          .enlarge(onclick="enlarge()")
+            .icon &#xe626;
+            span 放大
+        .table-box
+          table.table-1(border="0" rules="none")
+            tbody
+              tr
+                th(width="10%") 序号
+                th(width="20%") 支持项目
+                th(colspan="2" width="25%") 说明
+                th(width="15%") 分值
+                th(width="30%") 备注
+              tr
+                td(colspan="6" style="background-color:#e2eff8") 前端
+              tr
+                td(rowspan="11") 1
+                td(rowspan="11")  页面+模板+测试
+                td(rowspan="5")  PC端或移动端
+                td  大型专题
+                td  15-25分
+                td 页面屏数8屏以上；页面屏数5-8屏且包含新功能、新特性
+              tr
+                td 中型专题
+                td 10-15分
+                td 页面屏数5-8屏且常规功能、特效；页面屏数1-4屏且包含新功能、新特性
+              tr
+                td 小型专题
+                td  5分
+                td 页面屏数1-4屏且常规功能、特效
+              tr
+                td 二级or文本层（简单）
+                td 1.5分/个
+                td
+                  | 二级列表和图片，常规文本层；
+                  | 同一主题多个文本层或同一主题不同语种0.5分/个
+              tr
+                td 二级or文本层（复杂）
+                td 3分/个
+                td
+                  | 通用文本层，子频道；
+                  | 同一主题多个文本层或同一主题不同语种1分/个
+              tr
+                td(rowspan="5") PC端和移动端
+                td 大型专题
+                td 20-30分
+                td 页面屏数8屏以上；页面屏数5-8屏且包含新功能、新特性
+              tr
+                td 中型专题
+                td 15-20分
+                td 页面屏数5-8屏且常规功能、特效；页面屏数1-4屏且包含新功能、新特性
+              tr
+                td 小型专题
+                td 8分
+                td 页面屏数1-4屏且常规功能、特效
+              tr
+                td 二级or文本层 （简单）
+                td  2.5分/个
+                td
+                  | 二级列表和图片，常规文本层；
+                  | 同一主题多个文本层或同一主题不同语种0.5分/个
+              tr
+                td
+                  | 二级or文本层
+                  | （复杂）
+                td 5分/个
+                td
+                  | 通用文本层，子频道；
+                  | 同一主题多个文本层或同一主题不同语种1分/个
+              tr
+                td(colspan="2")  可视化数据（动态图表）
+                td  8-10分/个
+                td
+              tr
+                td(rowspan="3") 2
+                td(rowspan="3") H5
+                td(colspan="2") 简单
+                td 6分/个
+                td 逻辑少&技术简&量少
+              tr
+                td(colspan="2") 中等
+                td 10分/个
+                td 逻辑多&技术低&量多
+              tr
+                td(colspan="2") 复杂
+                td 15-18分/个
+                td 技术新&难&逻辑复杂
+              tr
+                td(rowspan="2") 3
+                td(rowspan="2") 小程序
+                td(colspan="2") 新版本开发
+                td 15-20分/个
+                td
+              tr
+                td(colspan="2") 版本迭代
+                td 5分/次
+                td
+              tr
+                td(rowspan="2") 4
+                td(rowspan="2") 修改、上传
+                td(colspan="2") 换肤、版块调整
+                td 0.5-1分
+                td 简单
+              tr
+                td(colspan="2") 换肤、版块调整
+                td  3-5分
+                td 复杂，包括增加版块、增加效果等
+              tr
+                td(colspan="6" style="background-color:#e2eff8") 设计
+              tr
+                td(rowspan="12") 5
+                td(rowspan="12") 专题、官网（设计）
+                td(rowspan="5") PC端或移动端
+                td 大型专题
+                td 15-25分
+                td 5000像素以上且图文排版+特效设计
+              tr
+                td 中型专题
+                td 10-15分
+                td 2500-5000像素且图文排版+特效设计
+              tr
+                td 小型专题
+                td 5分
+                td 2500像素以内或图文版块排版
+              tr
+                td 文本页
+                td 1.5分/个
+                td 同一主题多个文本页或同一主题不同语种0.5分/个
+              tr
+                td 二级
+                td 3分/个
+                td 同一主题多个二级或同一主题不同语种1分/个
+              tr
+                td(rowspan="5") PC端和移动端
+                td 大型专题
+                td 20-30分
+                td 5000像素以上且图文排版+特效设计
+              tr
+                td 中型专题
+                td 15-20分
+                td 2500-5000像素且图文排版+特效设计
+              tr
+                td 小型专题
+                td 8分
+                td 2500像素以内或图文版块排版
+              tr
+                td 文本页
+                td 2.5分/个
+                td 同一主题多个文本页或同一主题不同语种0.5分/个
+              tr
+                td 二级
+                td 5分/个
+                td 同一主题多个二级或同一主题不同语种1分/个
+              tr
+                td(colspan="2") 换肤
+                td 4分
+                td
+              tr
+                td(colspan="2") 题图
+                td 3分
+                td
+              tr
+                td(rowspan="2") 6
+                td(rowspan="2") H5
+                td(colspan="2") 平面
+                td 3分/页
+                td(rowspan="2")
+                  | 页为定稿的设计页面数量；
+                  | 平面总分最高不超过20分；
+                  | 手绘总分最高不超过30分；
+              tr
+                td(colspan="2") 手绘
+                td 5分/页
+              tr
+                td(rowspan="4") 7
+                td(rowspan="4") 图解
+                td(colspan="2") 常规
+                td 5分
+                td 5000像素内
+              tr
+                td(colspan="2") 常规加强版
+                td 8分
+                td 大于5000像素
+              tr
+                td(colspan="2") 动态图解（5000像素内）
+                td 10分
+                td 超过5000像素每增加1000像素+1分，总分最高不超过20分。
+              tr
+                td(colspan="2")  手绘（5000像素内）
+                td 12分
+                td 超过5000像素每增加1000像素+1.5分，总分最高不超过24分。
+              tr
+                td(rowspan="3") 8
+                td(rowspan="3") 海报/宣传页
+                td(colspan="2") 常规
+                td 3分
+                td(rowspan="3") 相同主题不同语种或只简单更换背景图等，1分/张
+              tr
+                td(colspan="2") 创意
+                td 5分
+              tr
+                td(colspan="2") 手绘
+                td 10分
+              tr
+                td(rowspan="5") 9
+                td(rowspan="5") 活动包装（包括主视觉+线下物料）
+                td(colspan="2") 小型（简单）
+                td 3分
+                td 活动包装只包括主视觉
+              tr
+                td(colspan="2") 小型
+                td 5分
+                td 活动包装：主视觉及线下物料（1-5项）
+              tr
+                td(colspan="2") 中型
+                td 10分
+                td 活动包装：主视觉及线下物料（6-10项）
+              tr
+                td(colspan="2") 大型
+                td 15分
+                td 活动包装：主视觉及线下物料（10项-20项）
+              tr
+                td(colspan="2") 特大型
+                td 25分
+                td 活动包装：主视觉及线下物料（20项以上）
+              tr
+                td(rowspan="2") 10
+                td(rowspan="2") Banner
+                td(colspan="2") 静态
+                td 1分
+                td
+              tr
+                td(colspan="2") 动态
+                td 2分
+                td
+              tr
+                td(rowspan="2") 11
+                td(rowspan="2") PPT设计
+                td(colspan="2") 简单
+                td 10分/套
+                td
+                  | 15页以内每增加1页加1分；
+                  | 15页以外每增加1页加0.5分；
+                  | 总分最高不超过40分
+              tr
+                td(colspan="2") 复杂带动效
+                td 15分/套
+                td
+                  | 15页以内每增加1页加2分 ；
+                  | 15页以外每增加1页加1分；
+                  | 总分最高不超过80分
+              tr
+                td 12
+                td logo设计
+                td(colspan="2")
+                td 5分
+                td
+              tr
+                td(rowspan="3") 13
+                td(rowspan="3") 书籍装帧/套
+                td(colspan="2") 内页（简单）
+                td 5分
+                td
+              tr
+                td(colspan="2") 内页（复杂）
+                td 8分
+                td
+              tr
+                td(colspan="2") 封面封底
+                td 5分/页
+                td
+              tr
+                td(rowspan="2") 14
+                td(rowspan="2") 表情设计
+                td(colspan="2") 简单/复杂（30+）
+                td 1分/个
+                td
+              tr
+                td(colspan="2") 形象设计
+                td 5分/个
+                td
+              tr
+                td 15
+                td 3D设计
+                td(colspan="2")
+                td 5分/秒
+                td 总分最高不超过30分
+              tr
+                td(rowspan="2") 16
+                td(rowspan="2") 小程序
+                td(colspan="2") 新版本设计
+                td 10-15分/个
+                td
+              tr
+                td(colspan="2") 版本迭代
+                td 3分/次
+                td
+              tr
+                td(rowspan="2") 17
+                td(rowspan="2") 宣传手册
+                td(colspan="2") 内页
+                td 2分/页
+                td(rowspan="2") 页为定稿的设计页面数量，总分最高不超过30分
+              tr
+                td(colspan="2") 封面封底
+                td 5分/页
+              tr
+                td 18
+                td 投标设计方案
+                td(colspan="2")
+                td 10分
+                td
+              tr
+                td(colspan="6" style="background-color:#e2eff8") 移动端界面设计
+              tr
+                td 19
+                td 界面设计
+                td(colspan="2") 交互+视觉
+                td 面议
+                td
+              tr
+                td 20
+                td 编程
+                td(colspan="2") ios/android
+                td 面议
+                td
+              tr
+                td(colspan="6" style="background-color:#e2eff8") 其他设计支持
+              tr
+                td 21
+                td 设计师
+                td(colspan="2") 初级/中级/高级
+                td 1.5 / 3 / 5 分/天
+                td(rowspan="5") 与需求部门沟通，根据成品估算工作时长
+              tr
+                td 22
+                td 工程师
+                td(colspan="2") 初级/中级/高级
+                td 1.5 / 3 / 5 分/天
+              tr
+                td 23
+                td 三维设计师
+                td(colspan="2")
+                td 3分/天
+              tr
+                td 24
+                td 产品经理
+                td(colspan="2")
+                td 5分/天
+              tr
+                td 25
+                td 三维工程师
+                td(colspan="2")
+                td 5分/天
+              tr
+                td(colspan="6" style="background-color:#e2eff8") 重大项目设计支持
+              tr
+                td 26
+                td 人民网重大项目
+                td(colspan="2") 两个以上部门参与
+                td 面议
+                td 每部门分值由协调部最终分配
+          table.table-2(border="0" rules="none" style="display:none;")
+            tbody
+            tr
+              th(style="width:15%") 序号
+              th(style='width:25%;border-right: 1px solid #d1d9dc;') 支持项目
+              th(style="width:30%") 分值
+              th(style='width:30%;border-right: 1px solid #d1d9dc;') 备注
+            tr
+              td(colspan='6', style='background-color:#e2eff8;') 演播厅项目支持
+            tr
+              td 1
+              td 1号厅活动
+              td 30分/场
+              td 抢单+双选
+            tr
+              td 2
+              td 5号厅活动
+              td 20分/场
+              td 抢单+双选
+            tr
+              td 3
+              td
+                | 2、3、4、5号厅
+                | （包含访谈专题）
+              td 10分/场
+              td
+                | ①三部门合作完成，分数平分，出主持人的部门多得1分；
+                br
+                | ②两部门合作完成，如一个部门仅出了主持人，则主持人部门得3分，如除主持人之外还出了一位其他工种，则两部门分数平分
+            tr
+              td(colspan='6', style='background-color:#e2eff8;') 视频产品支持
+            tr
+              td 4
+              td 动画设计（AE）
+              td 1分/秒
+              td
+            tr
+              td 5
+              td 手绘等非常规创意动画
+              td 2.5分/秒
+              td
+            tr
+              td(rowspan='2') 6
+              td(rowspan='2') 视频直播
+              td 单机位直播6分/场
+              td(rowspan='2')
+                | 另增机位2分/个
+                | 整场15分封顶（如遇大型活动可沟通）
+            tr
+              td 三机位直播10分/场
+            tr
+              td 7
+              td 新闻采访（非专题片）
+              td 单机位4分/场（含剪辑,无片头，无特效）
+              td 每增加一个机位加2分，提出特效要求 按照特效标准单独算分
+            tr
+              td(rowspan='3') 8
+              td(rowspan='3') 短视频（抖音、秒拍类）
+              td 日常短视频0.5分/条
+              td 无特效包装
+            tr
+              td 创意短视频2分/条
+              td
+            tr
+              td 品宣类短视频5分/条
+              td
+            tr
+              td 9
+              td 视频栏目包装
+              td 20-30分/套
+              td
+            tr
+              td(rowspan='3') 10
+              td(rowspan='3') 模型类别
+              td 三维模型10分/个
+              td
+            tr
+              td 场景建模30分/个
+              td
+            tr
+              td 写实模型需面议
+              td
+            tr
+              td 11
+              td 专题片
+              td 面议
+              td
+            tr
+              td 12
+              td 纪录片
+              td 面议
+              td
+            tr
+              td 13
+              td 宣传片
+              td 面议
+              td
+            tr
+              td(colspan='6', style='background-color:#e2eff8;') 其他视频支持
+            tr
+              td(rowspan='2') 14
+              td(rowspan='2') 主持人
+              td 3分/场
+              td 不超过1小时/场
+            tr
+              td 6分/场
+              td 4小时/场
+            tr
+              td(rowspan='2') 15
+              td(rowspan='2') 摄像
+              td 固定机位2分/场
+              td(rowspan='2') 4小时/场
+            tr
+              td 移动机位3分/场
+            tr
+              td 16
+              td 摄影
+              td 摄影3分/场
+              td
+            tr
+              td 17
+              td 导播
+              td 10分/场
+              td 4小时/场
+            tr
+              td 18
+              td 现场导演
+              td 8分/场
+              td 4小时/场
+            tr
+              td 19
+              td 摇臂摄像师
+              td 5分/场
+              td 4小时/场
+            tr
+              td 20
+              td 编导
+              td 2分/场
+              td 4小时/场
+            tr
+              td 21
+              td 航拍师
+              td 8分/天
+              td
+            tr
+              td 22
+              td 调音师
+              td 2分/场
+              td 4小时/场
+            tr
+              td 23
+              td 在线包
+              td 2分/场
+              td 4小时/场
+            tr
+              td 24
+              td 剪辑师
+              td 1分/分钟
+              td 以成片计算时间
+            tr
+              td(rowspan='2') 25
+              td(rowspan='2')
+                | 高级后期 （含AE、C4D）
+              td 原创10分/秒
+              td
+            tr
+              td 套用模板0.5分/秒
+              td
+            tr
+              td 26
+              td 活动统筹
+              td 3分/场
+              td 4小时/场
+            tr
+              td 27
+              td 路途（市外）+彩排
+              td 2分/人/天
+              td
+                | 市内彩排加0.5分
+                | 市外彩排不单算
+            tr
+              td 28
+              td 新闻配音
+              td 1分/250字
+              td
+            tr
+              td 29
+              td 宣传片配音
+              td 10分/1000字
+              td 之后每增加250字加2分
 </template>
 
 <script>
@@ -127,5 +685,44 @@
   background-color: gainsboro;
   color: royalblue;
   background-image: url('@|doit-active.png|');
+}
+tr {
+  width: 100%;
+}
+.switch-button {
+  display: none;
+  margin-left: 5px;
+}
+
+.klj-show:hover .text {
+  display: none;
+}
+
+.klj-show:hover .switch-button {
+  display: block;
+}
+
+.klj-show:hover .switch-button span {
+  margin: 0 5px;
+  font-size: 15px;
+  color: #999999;
+}
+
+.klj-show:hover .switch-button span.active {
+  color: #8383cc;
+}
+
+
+.klj-show:hover .switch-button span {
+  margin: 0 3px;
+}
+.klj-show .table-box {
+  display: none;
+  height: 100%;
+  overflow: auto;
+}
+
+.klj-show:hover .table-box {
+  display: block;
 }
 </style>
