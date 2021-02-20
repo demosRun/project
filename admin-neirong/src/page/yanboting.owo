@@ -1,0 +1,292 @@
+<template lang="pug">
+.add-new
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 申请人信息
+    .input-bar
+      .left
+        .icon &#xe618;
+        span(font="DFQianLongXing.ttf") 申请人
+      input(type="text")
+    .input-bar
+      .left
+        .icon &#xe603;
+        span(font="DFQianLongXing.ttf") 申请部门
+      input(type="text")
+    .input-bar
+      .left
+        .icon &#xe60c;
+        span(font="DFQianLongXing.ttf") 联系方式
+      input(type="text")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 项目信息
+    .input-bar
+      .left
+        .icon &#xe6bd;
+        span(font="DFQianLongXing.ttf") 项目名称
+      input(type="text")
+    .input-bar
+      .left
+        .icon &#xe643;
+        span(font="DFQianLongXing.ttf") 上线地址
+      input(type="text")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求信息
+    .input-bar
+      .left
+        .icon &#xe6bd;
+        span(font="DFQianLongXing.ttf") 需求名称
+      input(type="text")
+    .input-bar.date-input
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 上线日期
+      input(type="text" readonly="true")
+    .input-bar
+      .left
+        .icon &#xe627;
+        span(font="DFQianLongXing.ttf") 需求类型
+      select
+        option(value ="volvo") 演播厅活动
+    .input-bar.date-input
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 完成日期
+      input(type="text" readonly="true")
+    .input-bar
+      .left
+        .icon &#xe61d;
+        span(font="DFQianLongXing.ttf") 选择场次
+      select
+        option(value ="场次1") 场次1
+        option(value ="场次2") 场次2
+        option(value ="场次3") 场次3
+        option(value ="场次4") 场次4
+        option(value ="场次5") 场次5
+  //- 访谈选择
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 访谈详情
+    .clear.check-box
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="2号厅访谈")
+        span(font="DFQianLongXing.ttf") 2号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="3号厅访谈")
+        span(font="DFQianLongXing.ttf") 3号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="4号厅访谈")
+        span(font="DFQianLongXing.ttf") 4号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="5号厅访谈")
+        span(font="DFQianLongXing.ttf") 5号厅访谈
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求详情
+    .clear.check-box
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="页面+模板+测试")
+        span(font="DFQianLongXing.ttf") 页面+模板+测试
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="H5")
+        span(font="DFQianLongXing.ttf") H5
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="小程序")
+        span(font="DFQianLongXing.ttf") 小程序
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="修改+上传")
+        span(font="DFQianLongXing.ttf") 修改+上传
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="专题+官网(设计)")
+        span(font="DFQianLongXing.ttf") 专题+官网(设计)
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="图解")
+        span(font="DFQianLongXing.ttf") 图解
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="海报/宣传页")
+        span(font="DFQianLongXing.ttf") 海报/宣传页
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="活动包装")
+        span(font="DFQianLongXing.ttf") 活动包装
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="Banner")
+        span(font="DFQianLongXing.ttf") Banner
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="PPT设计/页")
+        span(font="DFQianLongXing.ttf") PPT设计/页
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="logo设计")
+        span(font="DFQianLongXing.ttf") logo设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="书籍装帧/套")
+        span(font="DFQianLongXing.ttf") 书籍装帧/套
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="表情设计")
+        span(font="DFQianLongXing.ttf") 表情设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="3D设计")
+        span(font="DFQianLongXing.ttf") 3D设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="宣传手册")
+        span(font="DFQianLongXing.ttf") 宣传手册
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="投标设计方案")
+        span(font="DFQianLongXing.ttf") 投标设计方案
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="界面设计")
+        span(font="DFQianLongXing.ttf") 界面设计
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="编程")
+        span(font="DFQianLongXing.ttf") 编程
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="设计师")
+        span(font="DFQianLongXing.ttf") 设计师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="工程师")
+        span(font="DFQianLongXing.ttf") 工程师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="三维设计师")
+        span(font="DFQianLongXing.ttf") 三维设计师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="产品经理")
+        span(font="DFQianLongXing.ttf") 产品经理
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="三维工程师")
+        span(font="DFQianLongXing.ttf") 三维工程师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="动画设计(AE)")
+        span(font="DFQianLongXing.ttf") 动画设计(AE)
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="手绘等非常规创意动画")
+        span(font="DFQianLongXing.ttf") 手绘等非常规创意动画
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="视频直播")
+        span(font="DFQianLongXing.ttf") 视频直播
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="新闻采访（非专题片）")
+        span(font="DFQianLongXing.ttf") 新闻采访（非专题片）
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="视频栏目包装")
+        span(font="DFQianLongXing.ttf") 视频栏目包装	
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="模型类别")
+        span(font="DFQianLongXing.ttf") 模型类别
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="专题片")
+        span(font="DFQianLongXing.ttf") 专题片
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="纪录片")
+        span(font="DFQianLongXing.ttf") 纪录片
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="宣传片")
+        span(font="DFQianLongXing.ttf") 宣传片								
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="主持人")
+        span(font="DFQianLongXing.ttf") 主持人
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="摄像")
+        span(font="DFQianLongXing.ttf") 摄像
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="摄影")
+        span(font="DFQianLongXing.ttf") 摄影
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="导播")
+        span(font="DFQianLongXing.ttf") 导播
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="现场导演")
+        span(font="DFQianLongXing.ttf") 现场导演
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="摇臂摄像师")
+        span(font="DFQianLongXing.ttf") 摇臂摄像师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="编导")
+        span(font="DFQianLongXing.ttf") 编导
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="航拍师")
+        span(font="DFQianLongXing.ttf") 航拍师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="调音师")
+        span(font="DFQianLongXing.ttf") 调音师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="在线包")
+        span(font="DFQianLongXing.ttf") 在线包
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="剪辑师")
+        span(font="DFQianLongXing.ttf") 剪辑师
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="高级后期（含AE、C4D）")
+        span(font="DFQianLongXing.ttf") 高级后期（含AE、C4D）
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="活动统筹")
+        span(font="DFQianLongXing.ttf") 活动统筹
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="路途（市外）+彩排")
+        span(font="DFQianLongXing.ttf") 路途（市外）+彩排
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="新闻配音")
+        span(font="DFQianLongXing.ttf") 新闻配音
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="宣传片配音")
+        span(font="DFQianLongXing.ttf") 宣传片配音
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="2号厅访谈")
+        span(font="DFQianLongXing.ttf") 2号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="3号厅访谈")
+        span(font="DFQianLongXing.ttf") 3号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="4号厅访谈")
+        span(font="DFQianLongXing.ttf") 4号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="5号厅访谈")
+        span(font="DFQianLongXing.ttf") 5号厅访谈
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="1号厅活动")
+        span(font="DFQianLongXing.ttf") 1号厅活动
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="5号厅活动")
+        span(font="DFQianLongXing.ttf") 5号厅活动
+      label.checkbox-item
+        input.checkbox(type="checkbox" value="其他")
+        span(font="DFQianLongXing.ttf") 其他
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求描述
+    textarea(id="description" placeholder="详细需求描述")
+    input(type="file" value="上传附件" name="accessory" id="file")
+    .submit-box.clear
+      input#submit(type="button" value="提交" o-hover="shadow")
+      input#clear(type="button" value="重置" o-hover="shadow")
+</template>
+
+
+<style lang="less">
+.add-new {
+  height: calc(100% - 31px);
+  padding: 10px;
+  overflow: auto;
+}
+input[type="file"] {
+}
+.input-bar select {
+  padding: 4px 8px;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 260px;
+  text-align: left;
+  box-sizing: border-box;
+  outline: none;
+  height: 34px;
+  font-size: 16px;
+}
+.card-box textarea {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  display: block;
+  height: 140px;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
+  outline: none;
+  margin-top: 10px;
+}
+</style>

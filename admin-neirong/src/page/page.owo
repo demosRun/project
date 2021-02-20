@@ -1,0 +1,147 @@
+<template lang="pug">
+.admin.clear
+  .title-bar.clear
+    .title.fl(font="FZLTCHJW.TTF") 内容服务管理系统
+    .page-name.fl
+      a(href="#") 等待竞单
+      .icon &#xe601;
+      span 全国党员读书平台设计需求
+    .log.fr
+      span#username 全媒体制作二部 | 蒲鸽
+      span#logout 登出
+  .conn-box
+    .menu-box.left.fl
+      .menu
+        .menu-title
+          .icon &#xe60d;
+          span 项目管理
+        a.menu-item.active(href="#") 待竞单
+        a.menu-item(href="#") 进行中
+        a.menu-item(href="#") 已完成
+        a.menu-item(href="#") 竞单失败
+        .menu-title
+          .icon &#xe60d;
+          span 项目管理
+        //- 编辑部门才有的
+        a.menu-item(href="#") 创建项目
+        a.menu-item(href="#") 历史项目
+        //- 管理员
+        .menu-title
+          .icon &#xe780;
+          span 管理工具
+        a.menu-item(href="#") 调整分值
+        a.menu-item(href="#") 配额统计
+    .right-box.fl
+      //- 内容显示区域
+
+      //- 设计刊例价
+      //- plug(_name="sheji" _src="./src/moudle/sheji.owo")
+      //- 视频刊例价
+      //- plug(_name="shipin" _src="./src/moudle/shipin.owo")
+      //- 竞单列表
+      //- plug(_name="jingdan" _src="./src/moudle/jingdan.owo")
+      //- 历史项目
+      //- plug(_name="lishi" _src="./src/moudle/lishi.owo")
+      //- 新建需求
+      //- plug(_name="yanboting" _src="./src/page/yanboting.owo")
+      //- 评价
+      //- plug(_name="pingjia" _src="./src/page/pingjia.owo")
+      //- 调整
+      //- plug(_name="tiaozheng" _src="./src/page/tiaozheng.owo")
+      //- 需求详情
+      plug(_name="xiangqing" _src="./src/page/xiangqing.owo")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      console.log('sdsd')
+    }
+  }
+</script>
+
+
+<style lang="less">
+.admin {
+  // background-color: #f2f2f2;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(#f9f7f7 80%, #bcbcd0);
+}
+.menu-box {
+  width: 260px;
+  background: white;
+  height: 100%;
+  background: linear-gradient(#fff8f8 40%, rgba(241, 236, 236, 0.23));
+  box-shadow: 0px 0px 3px #d9efef;
+  .title {
+    color: #333;
+    line-height: 100px;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+.right-box {
+  height: 100%;
+  overflow: auto;
+  width: calc(100% - 260px);
+  .title-bar {
+    height: 40px;
+    border-bottom: 1px solid #eae5e5;
+  }
+}
+.box {
+  margin: 5px;
+  background-color: white;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 10px;
+  width: calc(100% - 30px);
+}
+.menu-item.active {
+  background-color: gainsboro;
+  color: royalblue;
+  background-image: url('@|doit-active.png|');
+}
+tr {
+  width: 100%;
+}
+.switch-button {
+  display: none;
+  margin-left: 5px;
+}
+
+.klj-show:hover .text {
+  display: none;
+}
+
+.klj-show:hover .switch-button {
+  display: block;
+}
+
+.klj-show:hover .switch-button span {
+  margin: 0 5px;
+  font-size: 15px;
+  color: #999999;
+}
+
+.klj-show:hover .switch-button span.active {
+  color: #8383cc;
+}
+
+
+.klj-show:hover .switch-button span {
+  margin: 0 3px;
+}
+.klj-show .table-box {
+  display: none;
+  height: 100%;
+  overflow: auto;
+}
+
+.klj-show:hover .table-box {
+  display: block;
+}
+</style>

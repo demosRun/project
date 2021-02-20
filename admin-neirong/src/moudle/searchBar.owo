@@ -1,0 +1,104 @@
+<template lang="pug">
+.search-bar.clear
+  .text-input.search-bar-item.fl
+    input(type="text" placeholder="请输入需求名称")
+  .date-input.search-bar-item.fl
+    input(type="text" placeholder="开始时间" readonly="true")
+  .icon.fl &#xe637;
+  .date-input.search-bar-item.fl
+    input(type="text" placeholder="结束时间" readonly="true")
+  .text-input.search-bar-item.fl
+    input(type="text" placeholder="需求部门")
+  .select-input.search-bar-item.fl
+    select#type
+      option(value='-') 请选择需求类别
+      option(value='日常') 日常
+      option(value='访谈') 访谈
+      option(value='演播厅') 演播厅
+      option(value='临时') 临时
+      option(value='重大') 重大
+      option(value='创新') 创新
+      option(value='调整') 调整
+  input#search(type="button" value="搜索")
+  input#clear(type="button" value="重置")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      $.datetimepicker.setLocale('ch');
+      $('.date-input input').datetimepicker({
+        timepicker:false,
+        format:'Y-m-d'
+      })
+    }
+  }
+</script>
+
+<style lang="less">
+.search-bar {
+  margin-bottom: 10px;
+}
+input, select {
+  height: 30px;
+  padding: 0 5px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #333;
+  outline-color: #b4d858;
+}
+.search-bar-item {
+  margin-right: 10px;
+}
+.text-input input {
+  border: 1px solid #e7e7e7;
+  height: 30px;
+  padding: 0 5px;
+  
+  color: #333;
+}
+.date-input input {
+  width: 120px;
+}
+.date-input {
+  position: relative;
+}
+.date-input::after {
+  content: ' ';
+  background-image: url('@|date.png|');
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+input[type="button"] {
+  width: 65px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 30px;
+}
+#search {
+  background-color: #009fe9;
+  color: white;
+  border: 1px solid #009fe9;
+}
+#search:hover, #clear:hover {
+  box-shadow: 1px 1px 2px #ccc9c9;
+}
+.icon.fl {
+  line-height: 30px;
+  font-size: 16px;
+  margin-right: 10px;
+  color: #b0d49e;
+}
+</style>

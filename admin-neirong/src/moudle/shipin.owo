@@ -1,0 +1,198 @@
+<template lang="pug">
+.box
+  table(border="0" rules="none")
+    tbody
+    tr
+      th 序号
+      th(style='width:200px;border-right: 1px solid #d1d9dc;') 支持项目
+      th 分值
+      th(style='width:700px;border-right: 1px solid #d1d9dc;') 备注
+    tr
+      td(colspan='6', style='background-color:#e2eff8;') 演播厅项目支持
+    tr
+      td 1
+      td 1号厅活动
+      td 30分/场
+      td 抢单+双选
+    tr
+      td 2
+      td 5号厅活动
+      td 20分/场
+      td 抢单+双选
+    tr
+      td 3
+      td
+        | 2、3、4、5号厅
+        | （包含访谈专题）
+      td 10分/场
+      td
+        | ①三部门合作完成，分数平分，出主持人的部门多得1分；
+        br
+        | ②两部门合作完成，如一个部门仅出了主持人，则主持人部门得3分，如除主持人之外还出了一位其他工种，则两部门分数平分
+    tr
+      td(colspan='6', style='background-color:#e2eff8;') 视频产品支持
+    tr
+      td 4
+      td 动画设计（AE）
+      td 1分/秒
+      td
+    tr
+      td 5
+      td 手绘等非常规创意动画
+      td 2.5分/秒
+      td
+    tr
+      td(rowspan='2') 6
+      td(rowspan='2') 视频直播
+      td 单机位直播6分/场
+      td(rowspan='2')
+        | 另增机位2分/个
+        | 整场15分封顶（如遇大型活动可沟通）
+    tr
+      td 三机位直播10分/场
+    tr
+      td 7
+      td 新闻采访（非专题片）
+      td 单机位4分/场（含剪辑,无片头，无特效）
+      td 每增加一个机位加2分，提出特效要求 按照特效标准单独算分
+    tr
+      td(rowspan='3') 8
+      td(rowspan='3') 短视频（抖音、秒拍类）
+      td 日常短视频0.5分/条
+      td 无特效包装
+    tr
+      td 创意短视频2分/条
+      td
+    tr
+      td 品宣类短视频5分/条
+      td
+    tr
+      td 9
+      td 视频栏目包装
+      td 20-30分/套
+      td
+    tr
+      td(rowspan='3') 10
+      td(rowspan='3') 模型类别
+      td 三维模型10分/个
+      td
+    tr
+      td 场景建模30分/个
+      td
+    tr
+      td 写实模型需面议
+      td
+    tr
+      td 11
+      td 专题片
+      td 面议
+      td
+    tr
+      td 12
+      td 纪录片
+      td 面议
+      td
+    tr
+      td 13
+      td 宣传片
+      td 面议
+      td
+    tr
+      td(colspan='6', style='background-color:#e2eff8;') 其他视频支持
+    tr
+      td(rowspan='2') 14
+      td(rowspan='2') 主持人
+      td 3分/场
+      td 不超过1小时/场
+    tr
+      td 6分/场
+      td 4小时/场
+    tr
+      td(rowspan='2') 15
+      td(rowspan='2') 摄像
+      td 固定机位2分/场
+      td(rowspan='2') 4小时/场
+    tr
+      td 移动机位3分/场
+    tr
+      td 16
+      td 摄影
+      td 摄影3分/场
+      td
+    tr
+      td 17
+      td 导播
+      td 10分/场
+      td 4小时/场
+    tr
+      td 18
+      td 现场导演
+      td 8分/场
+      td 4小时/场
+    tr
+      td 19
+      td 摇臂摄像师
+      td 5分/场
+      td 4小时/场
+    tr
+      td 20
+      td 编导
+      td 2分/场
+      td 4小时/场
+    tr
+      td 21
+      td 航拍师
+      td 8分/天
+      td
+    tr
+      td 22
+      td 调音师
+      td 2分/场
+      td 4小时/场
+    tr
+      td 23
+      td 在线包
+      td 2分/场
+      td 4小时/场
+    tr
+      td 24
+      td 剪辑师
+      td 1分/分钟
+      td 以成片计算时间
+    tr
+      td(rowspan='2') 25
+      td(rowspan='2')
+        | 高级后期 （含AE、C4D）
+      td 原创10分/秒
+      td
+    tr
+      td 套用模板0.5分/秒
+      td
+    tr
+      td 26
+      td 活动统筹
+      td 3分/场
+      td 4小时/场
+    tr
+      td 27
+      td 路途（市外）+彩排
+      td 2分/人/天
+      td
+        | 市内彩排加0.5分
+        | 市外彩排不单算
+    tr
+      td 28
+      td 新闻配音
+      td 1分/250字
+      td
+    tr
+      td 29
+      td 宣传片配音
+      td 10分/1000字
+      td 之后每增加250字加2分
+</template>
+
+
+<style lang="less">
+
+</style>

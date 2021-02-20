@@ -1,0 +1,203 @@
+<template lang="pug">
+.xiangqing.clear
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 当前步骤
+    .buzhou-box
+      .buzhou-item.after 需求部门创建项目
+      .icon.active &#xe604;
+      .buzhou-item.after 管理员审核
+      .icon.active &#xe7b2;
+      .buzhou-item.active 内容部门竞单
+      .icon.active &#xe604;
+      .buzhou-item 承接部门实施
+      .icon &#xe604;
+      .buzhou-item 结束项目
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 申请人信息
+    .input-bar
+      .left
+        .icon &#xe618;
+        span(font="DFQianLongXing.ttf") 申请人:
+      input(type="text" disabled="disabled" value="雷军")
+    .input-bar
+      .left
+        .icon &#xe603;
+        span(font="DFQianLongXing.ttf") 申请部门:
+      input(type="text" disabled="disabled" value="商务部")
+    .input-bar
+      .left
+        .icon &#xe60c;
+        span(font="DFQianLongXing.ttf") 联系方式:
+      input(type="text" disabled="disabled" value="13111111111")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 申请时间:
+      input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求信息
+    .input-bar
+      .left
+        .icon &#xe6bd;
+        span(font="DFQianLongXing.ttf") 需求名称:
+      input(type="text" disabled="disabled" value="全国党员读书平台设计需求")
+    .input-bar
+      .left
+        .icon &#xe618;
+        span(font="DFQianLongXing.ttf") 上线日期:
+      input(type="text" disabled="disabled" value="2020-07-31")
+    .input-bar
+      .left
+        .icon &#xe627;
+        span(font="DFQianLongXing.ttf") 需求类型:
+      input(type="text" disabled="disabled" value="演播厅活动")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 完成日期:
+      input(type="text" disabled="disabled" value="2020-07-31")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 选择场次:
+      input(type="text" disabled="disabled" value="场次1")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 详细需求
+    .item-box
+      span 页面制作
+      span 演播厅支持
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 需求描述
+    textarea(id="description" placeholder="详细需求描述") 7月24日下午两点在30层会议室召开总书记报道经验交流会，需要内网直播，摄像，导播，指定全媒体制作一部承接。
+    //- 查看附件
+    .show-file
+      a(href="#")
+        .icon &#xe696;
+        span 附件-内网直播说明文件.zip
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 竞标人信息
+    .input-bar
+      .left
+        .icon &#xe618;
+        span(font="DFQianLongXing.ttf") 竞标人:
+      input(type="text" disabled="disabled" value="雷军")
+    .input-bar
+      .left
+        .icon &#xe603;
+        span(font="DFQianLongXing.ttf") 竞标部门:
+      input(type="text" disabled="disabled" value="商务部")
+    
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 申请时间:
+      input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
+    .input-bar
+      .left
+        .icon &#xe602;
+        span(font="DFQianLongXing.ttf") 完成时间:
+      input(type="text" disabled="disabled" value="2020-07-20 10:12:29")
+    .input-bar
+      .left
+        .icon &#xe708;
+        span(font="DFQianLongXing.ttf") 竞标分值  :
+      input(type="text" disabled="disabled" value="8")
+    .input-bar
+      .left
+        .icon &#xe60c;
+        span(font="DFQianLongXing.ttf") 联系方式:
+      input(type="text" disabled="disabled" value="13111111111")
+  .card-box.clear
+    .title(font="FZLTCHJW.TTF") 竞标留言
+    textarea(id="description" placeholder="竞标留言内容") 3个页面，5张海报 总计50分
+    .h20
+    .title(font="FZLTCHJW.TTF") 附件
+    //- 查看附件
+    //- 图片附件使用这个
+    .preview-box
+      .image-box
+        a.smartphoto(href="http://www.people.com.cn/NMediaFile/2020/0803/MAIN202008030915155328251151520.jpg")
+          img(src="http://www.people.com.cn/NMediaFile/2020/0803/MAIN202008030915155328251151520.jpg")
+    //- 文件附件使用这个
+    .show-file
+      a(href="#")
+        .icon &#xe696;
+        span 附件-内网直播说明文件.zip
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      setTimeout(function() {
+        new SmartPhoto(".smartphoto");
+      }, 0)
+    }
+  }
+</script>
+
+<style lang="less">
+.xiangqing {
+  height: calc(100% - 61px);
+  padding: 10px;
+  overflow: auto;
+}
+.item-box {
+  margin-top: 15px;
+  span {
+    background-color: lightskyblue;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
+.card-box textarea {
+  box-shadow: none;
+  margin-top: 15px;
+  border: none;
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+  line-height: 30px;
+  color: #000;
+}
+.show-file {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 8px;
+  display: flex;
+  a {
+    display: flex;
+  }
+  .icon {
+    width: 24px;
+    text-align: left;
+    font-size: 18px;
+    color: #009fe9;
+  }
+  span {
+    color: #627fb3;
+  }
+}
+.image-box {
+  position: relative;
+  width: 120px;
+  height: 70px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 10px 0;
+  a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  img {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
+</style>
